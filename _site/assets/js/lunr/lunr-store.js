@@ -873,4 +873,439 @@ var store = [{
         "excerpt":"청지윈을 이용해 주셔서 감사합니다. 제품 구매 기능상담 등의 기술 지원 서비스 및 각종 혜택을 받을 수 있습니다. 제공하는 각종 서비스는 다음과 같습니다. 방문 서비스를 통하여 Q&amp;A, 제품에 관한 정보 및 기타 문의를 할 수 있습니다. 고객 등록을 마친 제품과 상담이 가능한 제품에 한하여 전화나 팩스를 통하여 전문 기술상담 서비스를 받을...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/8/",
+        "teaser":null},{
+        "title": "层积云是什么?",
+        "excerpt":" 层积云是一种 容器一体化管理平台(All-in-one Container Management Platform)。   随着云服务的普遍使用，除了基础架构，对应用程序、服务管理的要求也越来越高。像过去的 开发和运营方式充分发挥云的优势是有限的。尤其是应用程序领域，持续整合以及部署 (Continuous Integration/Deploy，CI/CD)、迁移(Migration)、多云/混合云的构筑等自动化、高 效化、整合管理的需求日益增加。   可以说容器技术的扩散是理所当然。目前很多企业已经引进了容器技术，呈现继续增强趋势。 (参考: http://redmonk.com/fryan/2017/09/10/cloud-native-technologies-in-the-fortune-100)   容器是将应用程序或服务压缩成可独立运行单位的技术，无论基础架构环境如何，都可以提供 相同的开发和运营经验。可以实现从基础架构到服务的云管理体系标准化，也可以减少开发及 运营工作量。尤其是不变的环境下，能管理好多云/混合云是它的优点所在。   层积云将容器优点适用于云管理服务，实现了开发及运营业务的高效化，为单一或多云/混合云 战略实施提供了平台。   层积云的主要职能如下      从代码到 Build、部署、更新环节的渠道自动化;   工作负载(服务)中心的容器管理:压缩、生命周期、资源等;   全栈监控:从基础架构到容器的状态以及资源的监控、报警管理;   多云/混合云集群配置及管理:Baremetal、私人/公共云。     下文 : 层积云组件概要  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/0.0/",
+        "teaser":null},{
+        "title": "层积云组件概要",
+        "excerpt":" 层积云根据其功能划分了 5 个图层。              集群管理层(Cluster Management Layer): 负责容器部署/运行的基础架构(集群)及编排 (Orchestration)的图层。编排由 Kubernetes(https://kubernetes.io)负责，提供基础架构管理、 监控等扩展管理职能。            服务管理层(Service Management Layer): 负责基于服务(Workload)的容器配置和管理的 图层。压缩服务配置的多个容器及相关对象，并管理其生命周期及监控。            渠道(Pipeline): 实现了从代码到容器 Build、部署过程的自动化，并执行持续的整合/部署。 用户可通过设置和脚本构筑所需要的渠道。            目录(Catalog): 提供通用运行时间(DB、中间件等)模板的图层。需要模板时，不需要额 外配置，可直接部署和使用。并且，还可以保存和管理用户应用程序的快照。            仪表盘(Dashboard): 提供集群、服务现状和监控视图。       下面继续了解各图层的详细内容。     上文 : 层积云介绍   下文 : 集群管理层(Cluster Management Layer)  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/0.1/",
+        "teaser":null},{
+        "title": "集群管理层(Cluster Management Layer)",
+        "excerpt":"集群管理层又分为组成集群的基础架构脚本和容器编排引擎部分。其具体配置如下图。 层积云根据用户设置，自动配置(Provisioning)集群基础架构和编排引擎，CUBE 就是负责该领 域的工具。CUBE 组建高可用性(High Availability，HA)的 Kubernetes 集群。由 CUBE 配置的集 群提供高稳定性和安全性以及扩展性。(叫做 CUBE 集群) 目前 CUBE 集群支持以下云平台及供应商。CUBE 可基于基础架构独立配置，所以任何基础架 构上都可以配置。以下是基础架构自动配置为准。 物理架构(Baremetal) 云平台 : Openstack, Cloudstack, VMWare 云服 : AWS, GCP, Azure CUBE 工具还提供集群 Kubernetes 版本的升级，以及节点(物理/虚拟机)的添加/删除、备份 等集群管理职能。 层积云对多云进行整合管理。即，分配到需要一个以上集群的服务，并对整个集群执行管理和 监控。集群可按照需求添加。 CUBE 集群额外提供管理为目的的扩展组件。 监控(Monitoring) : 基础架构、容器、服务(Workload)的状态、配置、资源监控 预警(Alerting) : 当满足特定条件时，通过邮件、MSN 方式发送警告以及管理 计量(Metering) : 如果是公共云集群，查询使用费用 检查(Inspecting) :...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/0.2/",
+        "teaser":null},{
+        "title": "服务管理层(Service Management Layer)",
+        "excerpt":"通常情况下一个应用程序及服务由多个容器组成。尤其是类似 Kubernetes 的编排引擎，容器以 外还需额外增加服务端口、控制器、卷等对象。因此基于容器的应用程序及服务管理，需要压 缩和管理容器以及相关对象的抽象单位。服务管理层就是负责该领域的图层。 层积云的服务管理拥有如下阶层架构。 服务(Service) : 是最上游阶层，分配和管理服务所必要的集群资源、映像注册表、映像 Build 的群组。根据开发人员和运营人员的角色赋予权限，能独立进行管理。层积云可根据需求， 创建多个服务，并按组或服务分配以及管理。 应用程序表(Application Map) : 是组成和管理应用程序的单位，相当于一个工作负载 (Workload)。例如一个服务可以由开发阶层、验证阶层、运营阶层的应用程序表组成，也 可以按照数据管理、分析系统类似功能组成应用程序表。从逻辑角度上，可以说应用程表 是管理工作负载为目的的由多个容器组成的单位。如前所述，服务由一个以上的应用程序 表组成。 层积云服务器(Cengjiyun Server) : 是容器和相关编排对象的压缩单位。应用程序表由一个 以上的层积云服务器组成。例如，可以 Web 服务器、DB 服务器等类似组件为准组成服务 器，也可以由小规模微服务为准组成层积云服务器。关于层积云服务器，后面进一步详细 说明。 下图是服务管理图层的配置图。 层积云服务器(Cengjiyun Server) 层积云服务器在服务管理层发挥最核心的功能。如前所述，层积云服务器是容器和相关编排对 象的压缩单位。层积云管理压缩对象的创建、更新等生命周期，同时把状态和资源作为一个压 缩单位进行监控以及管理。 以下是图实例。 层积云提供的管理职能有如下内容: 工作负载的创建、修改(更新)、停止、重启、删除、自动缩放 滚动更新 卷管理 服务端口管理 监控 检查 : 编排对象的状态以及部署信息查询 网络终端、日志查询 : 容器壳连接、容器日志查询 上文...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/0.3/",
+        "teaser":null},{
+        "title": "管道层(Pipeline Layer)",
+        "excerpt":" 管道层实现了从代码到容器的 Build 及部署的自动化。   Build 按照用户设置，依次执行代码下载、代码 Build 以及测试等作业(Task)、容器映像 Build。 作业(Task)使用的是执行内部作业的容器，除了默认提供的容器以外，用户可扩展使用公开或 用户制作的容器。   层积云服务器容器对已 Build 的映像进行滚动更新。通过 Build 制作的映像，将自动生成 Build 编码，再通过这个编码执行最新版本或者回滚。   从 Build 到部署的所有作业执行环节，均通过管道层实现了自动化。因此，只需创建一次 Build 和管道层，开发人员可以集中编写代码和修改作业。   下图为管道层的配置图。      管道层通过持续整合和部署(CI/CD)，为 DevOps 提供基础架构。   DevOps 强调开发和运营之间的连续性和有机协作。CI/CD 是 DevOps 的必要组件之一，同样在基于容器的开发和运营领域也非常重要。     上文 : 服务管理层(Service Management Layer)   下文 : 目录层(Catalog Layer)  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/0.4/",
+        "teaser":null},{
+        "title": "目录层(Catalog Layer)",
+        "excerpt":" 容器对其组成进行图像化处理，然后部署以及运行。因此，只要把容器映像和部署信息模板化，可以节省常用 DB 或中间件等反复作业的运行时间，必要时可随时轻松部署使用。   目录层是负责创建和管理上述模板的图层。目录层的配置图如下:      目录按照其目的划分为两种类型。      服务目录(Service Catalog) : 服务目录存储和管理用户以服务目的组成的应用程序快照。基 础架构或云供应商的交替等原因需要迁移时，可使用服务目录的快照功能。快照原样保存 应用程序表的配置。所以部署在其他环境时，应根据需求修改快照设置后再部署。   平台目录(Platform Catalog) : 指层积云通过‚层积云集线器‛提供的运行时间模板。用户 可以模板本身或根据自身环境修改设置后再部署。目前平台目录提供 DB、中间件、开发/ 运营工具、博客、机器学习等广泛使用的开源模板，并持续更新。     上文 : 管道层(Pipeline Layer)   下文 : 仪表板层(Dashboard Layer)  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/0.5/",
+        "teaser":null},{
+        "title": "仪表板层(Dashboard Layer)",
+        "excerpt":" 层积云的仪表板层以 Web UI 形式，提供服务现状、监控、集群现状等。   仪表板按照权限分类，提供和用户角色相对应的视图。层积云的用户权限如下:           管理员(Administrator)(Admin) : 执行集群管理，对层积云的所有服务拥有管理权限。            DevOps : 只对一个以上的服务分配拥有管理权限。仪表板只提供没有权限的服务视图，不能管理集群管理、环境设置等。       层积云提供的仪表盘视图如下           综合仪表盘 : 对所有服务和集群现状进行综合显示的视图            服务管理视图 : 创建、部署、监控、运营服务为目的的 DevOps 用户视图            目录视图 : 能查询和部署服务目录和平台目录的视图            集群视图 : 能整合一个以上的集群，并管理和监控的视图            环境设置 : 层积云平台的设置视图         上文 : 目录层(Catalog Layer)  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/0.6/",
+        "teaser":null},{
+        "title": "1. 登录",
+        "excerpt":" 以下是层积云的初始登录画面。   输入 Role、ID、密码后可以登录。   (ID 另询管理员)      初始连接或初始化密码时，密码必须修改。      90 天后可修改密码或延长使用。     ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/1/",
+        "teaser":null},{
+        "title": "2.环境设置",
+        "excerpt":" 通过环境设置，可以管理层积云必要的用户、账号、服务。                     环境设置菜单       说明                       用户       层积云使用用户                 账号       作为 Cloud 资源使用的 Public/ Private 云账号信息                 服务       可以 Build 及部署、运营应用程序的工作区          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2/",
+        "teaser":null},{
+        "title": "2.1 用户",
+        "excerpt":" 用户账号目录分为全部/使用/未使用，可分类查询。(使用与否显示为‘Y’，账号选择的是‘使用’;显示为‘N’，选择的是‘未使用’)   可以创建及修改、删除层积云用户账号，也可以按照账号分配 ADMIN、DEVOPS 权限。   a) 点击环境设置→用户→使用与否，从‘全部/使用/未使用’中选择一个。     用户设置                  用户设置       说明                       使用与否       根据使用与否查询过滤功能(全部/使用/未使用)                 用户创建       切换到用户添加页面                 用户 ID       用户登登录时，使用的 ID(E-mail 格式)                 名称       用户名称                 权限       用户所获得的权限(ADMIN、DEVOPS)                 使用与否       当前用户的使用与否                 最后登录时间       有关用户最后访问日期的数据信息                 说明       用户说明          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.1/",
+        "teaser":null},{
+        "title": "2.1.1 用户添加",
+        "excerpt":" 添加层积云用户的功能。   用户 ID 必须是邮件格式(cengjiyun@example.com)，因为当前不支持密码设置功能，所以创建 ID 后，必须进行密码初始化修改使用。 (初始化后提供的初始密码为‘Pass0000’)   a) 点击环境设置→用户→右上角的用户创建。    b) 选择用户 ID、名称、权限后，点击‘创建’按钮。                    权限       仪表盘       服务       目录       集群       环境设置                       ADMIN       ⃝       ⃝       ⃝       ⃝       ⃝                 DEVOPS       X       △       ⃝       X       X           - ADMIN : 抄录服务管理。可使用仪表盘、服务、目录、集群、环境设置菜单   - DEVOPS : 管理被分配到会员的服务。可使用服务和目录，可查询集群  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.1.1/",
+        "teaser":null},{
+        "title": "2.1.2 用户编辑",
+        "excerpt":" 编辑层积云用户信息的功能。   a) 环境设置→用户→用户操作菜单→用户编辑→修改完后，点击‘修改’按钮。     b) 除了用户 ID 以外，还可以修改名称、状态及权限。                    状态       说明                       Active       用户激活                 Inactive       用户非激活          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.1.2/",
+        "teaser":null},{
+        "title": "2.1.3 用户删除",
+        "excerpt":" 删除用户账号的功能。被删除的账号以‘Y’或‘N’的形式显示激活/非激活，而不是从目录中删除。   进入用户编辑页面，把状态改为激活，可重新使用该 ID。   a) 点击环境设置→用户→用户操作菜单→用户删除。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.1.3/",
+        "teaser":null},{
+        "title": "2.1.4 用户密码初始化",
+        "excerpt":" 初始化层积云用户密码的功能。(初始化后提供的初始密码为‘Pass0000’)   a) 点击环境设置→用户→用户操作菜单→用户密码初始化。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.1.4/",
+        "teaser":null},{
+        "title": "2.2 账号",
+        "excerpt":" 注册、编辑、删除作为云资源的 Public/Private 云账号信息的功能。   通过注册账号，可以导出该供应商资源、计量信息，或者创建服务器。   (计量信息的确认仅限于 Google Cloud Platform、AWS。)   用户账号目录分为全部/使用/未使用，可分类查询。(使用与否显示为‘Y’，账号选择的是‘使 用’;显示为‘N’，选择的是‘未使用’)   a) 点击环境设置→账号→使用与否，从‘全部/使用/未使用’中选择一个。                    账号设置       说明                       使用与否       根据使用与否查询过滤功能(全部/使用/未使用)                 账号创建       切换到账号登录页面                 账号名称       账号名称(用户指定)                 供应商       供应商种类(OPM/RVS/IDC/AWS/GCP/AZR)                 类型       账号类型(USER/METERING)                 使用与否       账号的使用与否                 说明       账号的用户说明          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.2/",
+        "teaser":null},{
+        "title": "2.2.1 账号添加",
+        "excerpt":" 账号可以添加使用。 (如AWS 账号, GCP 账号需要输入额外信息)   a) 点击环境设置→账号→右上角的账号添加。     b) 选择需要注册账号，填写名称、类型、说明。                    供应商       说明                       Amazon Web Service       亚马逊公司的公共云服务                 Google Cloud Platform       谷歌公司的公共云服务                 Microsoft cloud Service       微软公司的公共云服务                 Rovius Cloud       Accelerite 公司的企业云服务                 Onpremise       Baremetal环境下的私人云服务                          类型       说明                       User       账号登录的默认值                 Metering       使用公共云时、获取资源使用量时选择          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.2.1/",
+        "teaser":null},{
+        "title": "2.2.1-1 AWS 账号添加",
+        "excerpt":"登录 AWS 账号，需要 AWS 账号的访问秘钥和 Secret 秘钥。 a) 在 AWS 服务控制台右上角目录，点击‘Security Credentials’获取访问秘钥和 Secret 秘钥。 b) 第一个画面将弹出如下警告窗，是关于是否创建 IAM User 的内容，点击 Continue to Security Credentials 左键继续。 c) 在之后的画面，选择 Access Keys(Access Key ID and Secret Access Key)，然后点击 Create New Access Key 获取。 d) 密码发布后能看到如下窗口，可通过 Show Access Key 检查访问秘钥和信用秘钥。还可以 点击 Download Key File 保存密码。...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.2.1.1/",
+        "teaser":null},{
+        "title": "2.2.1-2 GCP 账号添加",
+        "excerpt":"登录 GCP 账号，需要支付账号的 ID 和 JSON 类型的 GCP 账号密码。 a) GCP 支付账号 ID，可进入 GCP 服务控制台 Billing -&gt; Overview 画面确认。 b) 进入 GCP 服务控制台，点击 APIs &amp; services -&gt; Credentials，获取 GCP 账号密码。 c) 在之后的画面，点击 Create credentials，选择 Service account key。 d) 账号密码发布画面上，将 Service account 改为 New service accoun，选择 Service account name 和 Role(Compute...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.2.1.2/",
+        "teaser":null},{
+        "title": "2.2.2 账号编辑",
+        "excerpt":" 可修改账号名称及类型、状态，如果是公共云供应商，可修改密码。   如果是集群正在使用的账号，只能修改账号名称和说明。   a) 环境设置→账号→账号操作菜单→账号编辑→修改结束后，点击修改。     b) 修改名称、类型、说明、状态以及密码。                    状态       说明                       Active       账号激活                 Inactive       账号非激活          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.2.2/",
+        "teaser":null},{
+        "title": "2.2.3 账号删除",
+        "excerpt":" 可删除已注册账号。如果是正在使用的账号，删除按钮显示为非激活状态。   a) 点击环境设置→账号→账号操作菜单→账号删除。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.2.3/",
+        "teaser":null},{
+        "title": "2.3 服务",
+        "excerpt":" 分配工作区，而工作区能 Build、部署、运营应用程序。可按照服务种类注册用户、集群、库。   服务目录分为全部/使用/未使用，可分类查询。(使用与否显示为‘Y’，服务选择的是‘使用’; 显示为‘N’，选择的是‘未使用’)   集群添加参考本说明书的集群部分说明。   a) 点击环境设置→服务→使用与否，从‘全部/使用/未使用’中选择一个。                    用户设置       说明                       使用与否       根据使用与否查询过滤(全部/使用/未使用)                 服务创建       切换到服务添加页面                 名称       服务名称(用户指定)                 使用与否       当前服务的使用与否                 集群       服务里已注册的集群项目          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.3/",
+        "teaser":null},{
+        "title": "2.3.1 服务添加",
+        "excerpt":" 添加服务的功能。可根据服务类别，注册用户以及集群、注册表(存储库)。   a) 点击环境设置→服务→右上角的服务创建。     b) 填写需要注册服务的名称、说明、颜色、注册表以及用户、集群信息。     c) 用户、集群添加，只反映被选的复选框内容。           用户编辑            用户编辑      ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.3.1/",
+        "teaser":null},{
+        "title": "2.3.2 服务编辑",
+        "excerpt":" 编辑服务信息的功能。可以修改服务名称、说明、颜色、状态，也可以编辑使用该服务的用户以及需要注册在服务目录的集群。   a) 环境设置→服务→服务操作菜单→服务编辑→修改结束后，点击修改。     b) 可修改服务名称、说明、颜色、状态以及用户、集群。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.3.2/",
+        "teaser":null},{
+        "title": "2.3.3 服务删除",
+        "excerpt":" 删除服务的功能。删除时，如为服务目录中已注册集群，则不能删除，可以先从服务编辑中删除集群后再删除。   a) 点击环境设置→服务→服务操作菜单→服务删除。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/2.3.3/",
+        "teaser":null},{
+        "title": "3.服务",
+        "excerpt":" 创建和管理应用程序表和 Build 作业、工作负载的功能。                   目录       说明                              显示服务里已注册的集群种类和集群数                        切换到 Build 管理页面                        切换到应用程序表创建页面          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3/",
+        "teaser":null},{
+        "title": "3.1 应用程序管理",
+        "excerpt":" 管理应用程序表和相应的工作负载群组以及工作负载。   ㅤㅤㅤㅤㅤ  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1/",
+        "teaser":null},{
+        "title": "3.1.1 应用程序表",
+        "excerpt":" 应用程序的组成单位。   作为一种逻辑单位建群，并部署群组的工作负载。   可查看组成应用程序表的集群计量信息或工作负载的监控信息。   可通过部署作业，创建工作负载或更新。   a) 选择服务→应用程序表点击。                    目录       说明                              由逻辑单位组成的群组。如激活操作菜单，可修改群组名称和列数， 以及往右或往左移、右或左边添加群组、删除群组。点击+按钮可 创建工作负载。                        被部署在应用程序里的工作负载。可利用拖&amp;放自由移动。                        当前正在部署的工作负载如上图，一目了然地简单显示。                        被部署在应用程序的工作负载单位，对正使用的 CPU、内存、网 络的监控服务菜单。                        Build 映像，可一次性执行到部署作业，可修改正在部署中的工作 负载映像版本重新部署，同时批量部署多个工作负载。                        可保存使用配置图等多个设置文件。          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.1/",
+        "teaser":null},{
+        "title": "3.1.1-1 应用程序表创建",
+        "excerpt":" 服务里创建新的应用程序表。   a) 点击服务→服务右侧的+。     b) 选择需要使用的集群，指定表的名称和命名空间名称，并创建应用程序表。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.1.1/",
+        "teaser":null},{
+        "title": "3.1.1-2 应用程序表名称修改",
+        "excerpt":" 修改应用程序表的名称。   a) 点击服务→用用程序表右侧的✎。     b) 被激活的名称输入栏里输入修改内容后，按 Enter 键修改应用程序表的名称。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.1.2/",
+        "teaser":null},{
+        "title": "3.1.1-3 应用程序表删除",
+        "excerpt":" 删除应用程序表的功能。为了删除应用程序表，需先删除正在部署中的工作负载。   a) 服务→应用程序表选择→应用程序表删除。      ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.1.3/",
+        "teaser":null},{
+        "title": "3.1.2 群组管理",
+        "excerpt":" 对工作负载进行群组管理。可以针对相应的群组，创建工作负载。可以修改群组名称，添加、移动、删除群组，以及修改列数。   a) 服务→选择应用程序表→点击工作负载群组的▼(操作按钮)，激活菜单。                    目录       说明                       群组名称修改       修改群组名称                 列数修改       修改列数(最小:1~最多:8)                 向左移动       群组向左移                 向右移动       群组向右移                 左边添加群组       群组左边创建新的群组                 右边添加群组       群组右边创建新的群组                 群组删除       删除群组(如群组有工作负载，则不能删除)          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.2/",
+        "teaser":null},{
+        "title": "3.1.3 工作负载",
+        "excerpt":" 组成应用程序的最小单位。可由 1 个工作负载组成应用程序，也可以多个工作负载组成 1 个应 用程序。   a) 选择服务→应用程序表，可查看表里面的工作负载。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.3/",
+        "teaser":null},{
+        "title": "3.1.3-1 工作负载创建",
+        "excerpt":"在群组管理创建和运行工作负载。 a) 点击服务→应用程序表选择→工作负载群组+按钮(工作负载创建)。 选择工作负载类型。 b) 输入基本信息、容器、实例、更新策略、服务端口、卷的内容，点击创建按钮生成工作负 载。 工作负载基本信息定义 项目 说明 名称 需要创建的工作负载名称 群组 创建工作负载的工作负载群组 类型 工作负载的实例类型(Single/Multi) 说明 工作负载的说明 容器生成 点击容器右‘+’键 输入容器名称，在容器的 Build 或映像中选择需要使用的映像，定义需要使用的 CPU/ 内存的资源值。 一旦容器创建，可输入需要使用的命令。 输入容器的环境参数值，或者可选择 Secret 设置。 可设置安全策略 可设置容器的健康检查 实例(只适用于服务器类型为 Multi 时) 点击实例项目的‘✎’ 项目 说明 自动缩放类型 定义自动缩放的基准 CPU 使用率(百分比) 自动缩放的基准(使用率) 内存使用率(百分比) 自动缩放的基准(使用率) 最大个数 缩放实例最大值 实例数 默认实例台数 更新策略(只适用于服务器类型为 Multi...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.3.1/",
+        "teaser":null},{
+        "title": "3.1.3-2 工作负载编辑",
+        "excerpt":" 编辑和重新部署运行或者停止状态的工作负载。   a) 服务→选择应用程序表→点击工作负载。     b) 编辑基本信息、容器、实例、更新策略、服务端口、卷内容后，按修改重新部署工作负载。   如果工作负载正在运行中，不能修改工作负载类型和容器映像。但，可以修改容器映像标签。 工作负载中断后，可以编辑以及修改。   ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.3.2/",
+        "teaser":null},{
+        "title": "3.1.3-3 工作负载实例信息查询",
+        "excerpt":" 可查询工作负载实例信息。                  实例       说明                       Pods       详细信息、状态信息、事件信息、部署信息、网络终端(容器)、日 志(容器)                 Services       详细信息、事件信息、部署信息                 Persistent Volume Claims       详细信息、卷详细信息、部署信息                 Deployments       详细信息、事件信息、部署信息、自动缩放信息(选项)                 Replica Sets       详细信息、事件信息、部署信息                 Ingresses       详细信息、部署信息           a) 服务→选择应用程序表→点击工作负载。     在实例页面点击刷新时，只重新查询实例信息。    b) 实例 Pod→容器和网络终端连接     c) 实例 Pod→容器日志      d) 服务→选择应用程序表→选择工作负载→点击实例的‘操作’按钮(激活)→点击详细信     e) 服务→选择应用程序表→选择工作负载→点击实例的‘操作’按钮(激活)→点击事件信 息     f) 服务→选择应用程序表→选择工作负载→点击实例的‘操作’按钮(激活)→点击部署信息    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.3.3/",
+        "teaser":null},{
+        "title": "3.1.3-4 工作负载中断",
+        "excerpt":" 中断已部署的工作负载。如果中断工作负载，POD 被删除。   a) 服务→选择应用程序表→点击运行状态的工作路径操作菜单(激活)→点击中断   ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.3.4/",
+        "teaser":null},{
+        "title": "3.1.3-5 工作负载开启",
+        "excerpt":" 开启已中断的工作负载。   a) 服务→选择应用程序表→点击停止状态的工作路径操作菜单(激活)→点击开始    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.3.5/",
+        "teaser":null},{
+        "title": "3.1.3-6 工作负载重启",
+        "excerpt":" 重启工作负载。类似计算机重启的概念。   a) 服务→选择应用程序表→点击运行状态的工作路径操作菜单(激活)→点击重启    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.3.6/",
+        "teaser":null},{
+        "title": "3.1.3-7 工作负载删除",
+        "excerpt":" 删除已中断的工作负载。   a) 服务→选择应用程序表→点击停止状态的工作路径操作菜单(激活)→点击删除    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.3.7/",
+        "teaser":null},{
+        "title": "3.1.4 监控",
+        "excerpt":" 根据不同的工作负载、POD、容器，可查询正在使用的 CPU、内存、网络使用量。   a) 服务→选择应用程序表→点击监控      ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.4/",
+        "teaser":null},{
+        "title": "3.1.5 管道",
+        "excerpt":"通过管道功能，可一次性进行映像 Build 作业到工作负载部署作业。 并且，可修改正在部署的工作负载映像版本再重新部署。 a) 服务→选择应用程序表→点击管道 管道菜单 说明 批量运行 批量运行管道作业 运行 运行相应管道作业 映像菜单 Build 说明 映像标签 X 输入注册表标签时，部署相应版本的工作负载 指定 ⃝ 映像版本中部署指定版本的工作负载 最新 ⃝ 映像版本中部署最新版本的工作负载 Build&amp;部署 ⃝ 新的 Build 作业后，部署相应映像版本的工作负载 b) 管道运行 1. 使用通用映像创建工作负载时 输入映像标签后，点击‘运行’或‘批量运行’(只有部署版本和输入版本不一致时可以运行。 但 latest 除外) 2. 使用 Build 映像创建工作负载时 使用指定映像部署 在管道作业目录右侧点击‘指定’以及选择映像后，点击‘运行’或者‘批量运行’(只有部 署版本和输入版本不一致时可以运行) 使用指定映像部署 在管道作业目录右侧选择‘Build&amp;部署’后，确认‘运行与否’。之后点击‘运行’或‘批量 运行’(只有确认运行与否时可以运行) 使用最新映像部署 在管道作业目录右侧选择‘最新’后，点击‘运行’或‘批量运行’。(只有部署版本和输入版 本不一致时可以运行)...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.5/",
+        "teaser":null},{
+        "title": "3.1.6 持久化卷",
+        "excerpt":" 提供持久化卷的现状以及创建和删除。   a) 服务→应用程序表→持久化卷                    项目       说明                       卷名称       点击已创建持久化卷名称时，切换到持久化卷详细页面                 卷类型       卷类型(Single、Shared)                 状态       卷的状态(Ready, Mounted)                 使用量       使用量、请求量、总量                 Age       卷创建需要时间                 Filter       通过搜索查询所必要的持久化卷                 + 按钮       切换到持久化卷创建页面                   持久化卷详细             持久化卷操作菜单        a) 卷请求信息     b) 卷信息     c) 存储信息    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.6/",
+        "teaser":null},{
+        "title": "3.1.6-1 持久化卷创建",
+        "excerpt":" 可以创建持久化卷。   a) 服务→应用程序表→持久化卷                    项目       说明                       持久化卷类型       卷类型(Single, Shared)                 存储       显示集群里已注册的存储目录                 访问模式       持久化卷类型为 Single 时和 ReadWriteOnce, Shard 时分别选择 ReadWriteMany、ReadOnlyMany                 名称       需要创建的持久化卷名称                 容量       需要创建的持久化卷容量(GB)          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.6.1/",
+        "teaser":null},{
+        "title": "3.1.6-2 持久化卷删除",
+        "excerpt":" 删除持久化卷。   a) 点击服务→应用程序表→持久化卷→持久化操作菜单(激活)→删除    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.6.2/",
+        "teaser":null},{
+        "title": "3.1.7 设置",
+        "excerpt":" 应用程序的单位，可以 key=value 形式保存参数值，如同卷使用。   a) 服务→选择应用程序表→点击设置                    菜单       说明                       配置图       注册、编辑、删除配置图的管理菜单                 Secrets       注册、编辑、删除 Secrets 的管理菜单          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.7/",
+        "teaser":null},{
+        "title": "3.1.7-1 配置图",
+        "excerpt":" 可将配置文件以 Map 形式保存于服务器，如同卷使用。   a) 服务→选择应用程序表→设置→点击配置图                    项目       说明                              切换到配置图添加页面                 名称       配置图名称(用户指定)                 说明       配置图说明(用户指定)                        配置图的操作菜单          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.7.1/",
+        "teaser":null},{
+        "title": "3.1.7-1a 配置图添加",
+        "excerpt":" 服务里添加配置图添加。   a) 服务→选择应用程序表→设置→配置图→点击配置图创建按钮，切换到注册页面。     b) 输入名称和数据值，按右上角创建按钮，创建配置图。                    项目       说明                       名称       输入名称的栏。之后不能编辑                 说明       输入配置图说明的栏。                 数据添加按钮       能添加配置图数据的按钮                 KEY       配置图的秘钥值                 VALUE       配置图的卷值          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.7.1a/",
+        "teaser":null},{
+        "title": "3.1.7-1b 配置图修改",
+        "excerpt":" 可修改服务里已添加的配置图数据。(名称不能修改)   a) 服务→选择应用程序表→设置→配置图→配置图操作菜单(激活)→点击配置图修改     b) 修改数据值后，点击修改按钮，编辑配置图。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.7.1b/",
+        "teaser":null},{
+        "title": "3.1.7-1c 配置图删除",
+        "excerpt":" 删除服务里已添加的配置图。   a) 服务→选择应用程序表→设置→配置图→配置图操作菜单(激活)→点击配置图删除。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.7.1c/",
+        "teaser":null},{
+        "title": "3.1.7-2 Secret",
+        "excerpt":" 以 Secret 文件形式保存于服务器，如同环境参数及卷使用。   a) 服务→选择应用程序表→设置→点击 Secret。                    项目       说明                              切换到 Secret 添加页面                 名称       Secret 名称(用户指定)                 说明       Secret 说明(用户指定)                        Secret 的操作菜单          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.7.2/",
+        "teaser":null},{
+        "title": "3.1.7-2a Secret 添加",
+        "excerpt":" 服务里添加 Secret。   a) 服务→选择应用程序表→设置→Secret→点击 Secret 创建按钮，切换到注册页面。     b) 输入名称和数据值，点击右上角创建按钮，创建 Secret。                    项目       说明                       名称       输入名称的栏。之后不能编辑                 说明       输入 Secret 说明的栏。                 数据添加按钮       能添加 Secret 数据的按钮                 KEY       Secret 的秘钥值                 VALUE       Secret 的卷值          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.7.2a/",
+        "teaser":null},{
+        "title": "3.1.7-2b Secret 修改",
+        "excerpt":" 可修改服务里已添加的 Secret 数据。(名称不能修改)   a) 服务→选择应用程序表→设置→Secret→Secret 操作菜单(激活)→点击 Secret 修改。     b) 修改数据值后，点击修改按钮，编辑 Secret。(为了安全考虑 Secret 值不显示)    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.7.2b/",
+        "teaser":null},{
+        "title": "3.1.7-2c Secret 删除",
+        "excerpt":" 删除服务里的 Secret。   a) 服务→选择应用程序表→设置→Secret→Secret 操作菜单(激活)→点击 Secret 删除。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.1.7.2c/",
+        "teaser":null},{
+        "title": "3.2 Build 管理",
+        "excerpt":" 管理 Docker 映像的 Build 作业。   下载应用程序、Build 源文件和映像文件，上传到 Habor 注册表。   a) 服务→选择 Build 管理点击。                    目录       说明                              Build 创建按钮                 Build 名称       Build 名称                 映像名称       被存储的 Docker 映像名称                 映像尺寸       被存储的 Docker 映像大小。以 MB 单位来标记                 最近操作       显示 Build 的状态                 状态       显示 Build 的运行状态                 日期       显示 Build 运行日期                        Build 操作菜单          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.2/",
+        "teaser":null},{
+        "title": "3.2.1 Build 添加",
+        "excerpt":"添加 Docker 映像的 Build 作业。应用程序下载、Build、映像 Build 共 3 种可选。 a) 服务→Build 管理→选择 Build 添加，切换到该页面。 b) 输入应用程序下载、应用程序 Build、映像 Build 内容，点击创建按钮，创建服务器。 Build 生成阶段 说明 应用程序下载 下载 Build 必要的源代码 应用程序 Build 需要编译源代码时使用 命令 - Build 时将运行的作业 主机路径 - 容器工作路径和其挂载的主机路径 Working dir - 实际容器内部工作路径，和容器路径对接 映像 - Build 时所使用的映像 映像 Build 利用前述作业的源代码创建 Docker 文件生成映像后，该映像存储于 注册表存储库的阶段...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.2.1/",
+        "teaser":null},{
+        "title": "3.2.2 作业设置编辑",
+        "excerpt":" 编辑 Build 作业。Build 名称不能编辑。在编辑页面，可删除现已下载的源代码，也可以分别运行应用程序下载、应用程序 Build、映像 Build3 种作业。   a) 服务→Build 管理→Build 操作菜单(激活)→选择作业设置编辑，切换到该页面。                    作业设置编辑       说明                       源文档删除       删除下载源文档                 应用程序下载运行       只运行应用程序下载                 Build 高速缓存删除       删除现已 Build 的容器                 应用程序 Build 运行       只运行应用程序 Build                 映像 Build 运行       只运行映像 Build          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.2.2/",
+        "teaser":null},{
+        "title": "3.2.3 历史记录",
+        "excerpt":" 切换到该 Build 历史页面，可针对 Build 运行项查看历史信息。可通过 Build 运行单位查看日志。   a) 服务→Build 管理→Build 操作菜单(激活)→选择历史记录，切换到该页面。     b) Build 作业历史菜单中，确认该 Build 作业的操作名称、状态、日期、作业时间、映像名称、 映像大小、Build 日志。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.2.3/",
+        "teaser":null},{
+        "title": "3.2.4 Build 运行",
+        "excerpt":" 运行 Build 作业。如果运行 Build，就一次性运行应用程序下载、应用程序 Build、映像 Build。   a) 选择服务→Build 管理→Build 操作菜单(激活)→Build 运行，执行 Build 作业。     b) 运行 Build 时，当前操作被修改，同时日志窗被激活。   Build 生成时，只限于选框中被选的数量标签进行激活，可查看各阶段 Build 过程。   (如果 DOWN 阶段发生错误，不会进行下一步。)   如果 Build 运行作业中看到 “Application_Create_Image Step is done…” 的日志, 说明映像 Build 已 成功完成。   ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.2.4/",
+        "teaser":null},{
+        "title": "3.2.5 Build 取消",
+        "excerpt":" 取消 Build 作业。只能取消运行状态(RUNNING)的 Build 作业。   a) 选择服务→Build 管理→Build 操作菜单(激活)→Build 取消，取消 Build 作业。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.2.5/",
+        "teaser":null},{
+        "title": "3.2.6 日志查看",
+        "excerpt":" 显示 Build 作业的最新运行日志。如果 Build 作业在运行中，就可以查看日志。   a) 选择服务→Build 管理→Build 操作菜单(激活)→日志查看，可查看该 Build 作业的 Build 运行日志。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.2.6/",
+        "teaser":null},{
+        "title": "3.2.7 作业删除",
+        "excerpt":" 删除 Build 作业。删除时，先删除该高速缓存和已下载源文档后，再进行删除作业。   a) 选择服务→Build 管理→Build 操作菜单(激活)→作业删除，可删除该 Build 作业。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/3.2.7/",
+        "teaser":null},{
+        "title": "4.目录",
+        "excerpt":" 通过应用程序配置的模板化，可轻松创建、部署、管理工作负载的功能。   当一次性捆绑使用多个工作负载时，使用目录功能。   目录分为服务目录和平台目录。                     目录菜单       说明                       服务目录       用户创建的目录                 平台目录       层积云默认提供的正式目录                 过滤目录       通过搜索，查看所需要的模板                 模板       组成应用程序的工作负载集合                 部署       通过目录，部署工作负载                 编辑       对目录内容进行编辑          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/4/",
+        "teaser":null},{
+        "title": "4.1 目录保存",
+        "excerpt":" 可以创建目录，一次性捆绑部署所需要的服务器。当工作负载容器映像为 Build 时，只保存映像，并转换成共享映像后，保存于目录。在服务目录页面，可查看已保存的目录。   目录保存时，以模板形式保存设置的配置图、Secret。 (但，为了安全考虑 Secret 值不保存。)   a) 在服务页面，选择保存为目录的应用程序表。   b) 点击页面右上角的 “保存为目录” 按钮。   c) 创建新模板时，选择”现有”目录，更新”新”目录和现有模板，然后撰写版本、摘要信息 和编辑内容，再点击下面”保存”按钮。(编辑、输入字段采用 Mark Down 文件格式, 该文件 的撰写方法可点击页面右侧的”Mark Down support”查看。)    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/4.1/",
+        "teaser":null},{
+        "title": "4.2 目录部署",
+        "excerpt":" 可以部署已创建目录。必要时，可以排除或编辑、部署不需要的实例。   a) 点击目录→需要部署模板的”部署”按钮。     b) 在模板目录页面，选择服务、集群、应用程序表后, 再点击”部署”。除了不需要的实例， 均可以部署。           部署新的应用程序表时，选择服务和集群，撰写应用程序表、命名空间名称后，可进行部 署。             部署现有应用程序表时，选择服务、应用程序表后，可进行部署。        c) 为了安全考虑 Secret 值不保存，应在部署前输入值。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/4.2/",
+        "teaser":null},{
+        "title": "4.3 目录编辑",
+        "excerpt":" 可编辑已创建目录内容。可修改模板的版本、摘要信息和编辑内容，同时可以修改各种实例的部署信息。   a) 点击目录→需要编辑模板的”编辑”按钮。     b) 更改需要修改的模板的版本、摘要信息、编辑内容, 再点击页面右下角的”编辑”按钮， 可修改实例的部署信息。     c) 编辑页面上只能查看配置图和 Secret 的内容, 不能编辑。     d) 编辑服务器时, 只能查看容器的环境设置, 卷和挂载卷的内容, 不能编辑。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/4.3/",
+        "teaser":null},{
+        "title": "4.4 目录删除",
+        "excerpt":" 可删除不必要的目录。(Platform 目录不能删除)   a) 点击目录→需要删除模板的”编辑”按钮。     b) 选择需要删除模板的版本后, 点击”删除”按钮, 删除该模板的版本。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/4.4/",
+        "teaser":null},{
+        "title": "5.集群",
+        "excerpt":" 提供集群的注册管理，以及节点和应用程序为单位的监控、卷、报警和计量服务。                  集群菜单       说明                       节点       所有节点的 CPU、内存、网络使用量以及个别节点的监控服务                 应用程序       所有应用程序的 CPU、内存、网络使用量以及个别应用程序的监控 服务                 卷       存储管理以及卷现状                 报警       集群事件信息相关的报警服务                 计量       集群费用及各种资源费用服务                 注册管理       集群的查看、修改、删除          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5/",
+        "teaser":null},{
+        "title": "5.1 集群管理",
+        "excerpt":" 注册、编辑、删除从供应商那里得到分配的 Kubernetes 集群信息的功能。   a) 点击集群→”排列”按钮，选择需要的排列标准。                   集群设置       说明                       +集群注册       切换到集群添加页面                 集群       集群的种类                 节点       集群的节点数字                 CPU       集群所有的 CPU 容量、请求量、使用量                 内存       集群所有的内存容量、请求量、使用量                 应用程序       集群的应用程序表(命名空间)数                 工作负载       正在部署在集群的工作负载数          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.1/",
+        "teaser":null},{
+        "title": "5.1.1 集群添加",
+        "excerpt":"可添加注册集群的功能。 a) 点击集群→右上角带+符号的按钮。 b) 输入基本信息(名称、k8s 版本、说明) 基本信息 说明 名称 需要注册的集群名称 k8s 版本 集群已安装的 Kubernetes 版本信息。e.g)1.8.13 ID 对集群默认 ID(用户指定)、报警消息进行重定向时需要 说明 集群的用户说明 c) 输入供应商信息(账号、类型、地域)。 根据账号的供应商和类型，输入栏毁被修改。如果是 Baremetal，重定向提供默认值，可以修改。 供应商 说明 账号 已注册账号 类型 Kubernetes 的使用类型，从 MANAGED、PROVIER、GKE 中选择 重定向 已安装 Kubernetes 服务器的重定向 类型 说明 MANAGED 使用 CUBE 安装程序组成 kubernetes 的集群 PROVIDER Kubernetes 基于公共云 VM 使用，但...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.1.1/",
+        "teaser":null},{
+        "title": "5.1.2 集群编辑",
+        "excerpt":" 修改集群的基本信息、供应商、监控、集群类型的功能。但不能修改供应商的账号、类型、重 定向。   a) 集群→选择集群→注册管理→修改按钮→修改结束后，点击保存按钮。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.1.2/",
+        "teaser":null},{
+        "title": "5.1.3 集群删除",
+        "excerpt":" 删除集群信息的功能。如有应用程序表正在使用该集群，则不能删除。   a) 集群→选择集群→注册管理→点击‘删除’按钮。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.1.3/",
+        "teaser":null},{
+        "title": "5.2 节点",
+        "excerpt":" 可查询所有节点的全部磁盘、CPU、内存、网络使用量以及个别节点的 Label、状态信息等的 画面。点击节点名称，即可查询节点详细信息。   a) 集群→选择集群→点击节点。     b) 点击节点名称，即可查询节点详细信息。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.2/",
+        "teaser":null},{
+        "title": "5.3 应用程序",
+        "excerpt":" 可查看所有应用程序的全部 CPU、内存、网络使用量以及个别应用程序的命名空间、实例现状 等的画面。点击应用程序名称，可切换到该应用程序表的页面。   a) 集群→选择集群→点击应用程序。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.3/",
+        "teaser":null},{
+        "title": "5.4 卷",
+        "excerpt":" 注册公共云存储以及外部存储的信息，提供当前卷的监控服务。   a) 集群→选择集群→点击卷。                    存储设置信息       说明                       +按钮       切换到存储添加页面                 名称       存储名称(用户指定)                 类型       存储种类(NFS/EBS/Google Persistent Disk/Azure Disk)                 存储类别名称       已注册在 k8s 的类别名称                 策略       存储卷策略设置(Retain,Recyle,Delete)                 状态       存储使用状态                          卷设置信息       说明                       卷名称       PVC 名称                 状态       PVC 挂载状态                 使用量       PV 已分配的可用量和使用量                 访问模式       PV 访问权限                 Age       PVC 创建所需时间          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.4/",
+        "teaser":null},{
+        "title": "5.4.1 存储添加",
+        "excerpt":"可以添加卷使用。 a) 选择集群→集群。 b) 进入集群详细画面，选择卷。 c) 进入集群详细画面，选择卷 存储注册信息 说明 名称 PV 名称 说明 PV 用户说明 类型 存储类型 (Single, Shared) 存储插件 存储种类(NFS, NFS Named, EBS, Google Persistent Disk, Azure Disk) 策略 PV 使用策略(RETAIN/DELETE) 类型 说明 Single 只能用于一个工作负载的存储 Shared 可用于多个工作负载之间共享的存储 策略 说明 Retain 即使持久化卷请求(PVC)被删除，数据仍保留在持久化卷(PV)中。之后 可以重复使用，但重复使用时，需要重新注册 PV。 Delete PVC 被删除的同时该 PV 也一起被删除。 d)...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.4.1/",
+        "teaser":null},{
+        "title": "5.4.2 存储编辑",
+        "excerpt":" 编辑已注册存储信息的功能。但，不能编辑 NFS 命名类型的存储。   a) 集群→选择集群→卷→卷操作按钮→点击存储编辑。     b) 不能修改名称、说明、策略、存储类别名称、参数值。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.4.2/",
+        "teaser":null},{
+        "title": "5.4.3 存储删除",
+        "excerpt":" 删除已注册存储信息的功能。   a) 集群→选择集群→卷→卷操作按钮→点击卷删除。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.4.3/",
+        "teaser":null},{
+        "title": "5.5 报警",
+        "excerpt":" 使用此功能接收有关集群的事件。   a) 集群→选择集群→点击报警。     b) 点击报警名称，即可查询详细内容。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.5/",
+        "teaser":null},{
+        "title": "5.5.1 报警目录",
+        "excerpt":"在以下目录的持续时间内，触发条件仍未改善时报警。 报警管理 报警 ID ALM-001 重要程度 警告 报警名称 AlertmanagerDown 持续时间 5分钟 触发条件 无法搜集报警管理度量时启动 解决方案 检查 Prometheus 日志以及报警管理日志和事件。必要时重启 Pod。 报警 ID ALM-002 重要程度 警告 报警名称 AlertmanagerFailedReload 持续时间 10分钟 触发条件 修改管理设置时，重读设置失败时启动 解决方案 检查该 Pod 日志，纠正配置图设置错误。 ETCD3 报警 ID ETC-001 重要程度 危急 报警名称 InsufficientMembers 持续时间 3分钟 触发条件 无法搜集 ETCD 度量时启动 解决方案 检查 ETCD...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.5.1/",
+        "teaser":null},{
+        "title": "5.6 计量",
+        "excerpt":" 对正在使用的各种集群，提供计量(计费)监控服务。   计量服务仅限于适用公共云的 AWS 和 GCP。   a) 集群→选择集群→点击计量。    ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/5.6/",
+        "teaser":null},{
+        "title": "6.仪表盘",
+        "excerpt":" 通过仪表盘，可一目了然层积云所服务的信息。           摘要信息       可查看当前已注册管理的应用程序数量、工作负载数量、已注册集群数、当前启用报警数。            资源现状       可查看 CPU、内存的总量、请求量、使用量以及存储(节点、Pv)总量。            供应商集群现状       可查看不同供应商已注册的集群数、应用程序数量、工作负载数量。            集群费用现状       可查看正在使用的集群费用。            集群上游资源请求率       可查看正在使用的集群中，上游 5 个集群的资源分配率(request)。            各应用程序的上游资源请求量       可查看正在使用的应用程序中，上游 5 个应用程序的资源分配量。         ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/6/",
+        "teaser":null},{
+        "title": "6.1 用户管理",
+        "excerpt":" 可查看和管理当前用户信息。      a) 点击仪表盘→页面左下角的用户形状按钮。                  目录       说明                       ID       可查看当前使用的账号 ID。                 用户语言选择       可选韩语、日语、英语其中一个。                 主题       可修改 Light 和 Dark 主题。                 密码修改       可输入新旧密码修改密码。                 帮助       提供关于层积云使用功能的帮助手册。                 产品名称       显示产品名称层积云。                 版本       可查看当前层积云版本。                 注销       注销当前使用账号。          ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/6.1/",
+        "teaser":null},{
+        "title": "7.术语说明",
+        "excerpt":" 为了帮助用户了解层积云的运用，下面对 Kubernetes 及层积云的术语进行了整理。  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/7/",
+        "teaser":null},{
+        "title": "7.1 Kubernetes(k8s)",
+        "excerpt":"1.集群 术语 说明 Namespace k8s 的虚拟集群，可以为用户提供分组或分项目的额外操作环境 Nodes 驱动 k8s 已分组的应用程序物理服务器或 VM Persistent Volumes(PV) 支持在外部存储、NFS、iSCSI、云上提供的存储系统 Roles 根据使用情况授权 Storage Classes 对 PV 进行动态配置时，用于识别 NFS 服务器的标识符 2.工作负载 术语 说明 Cron Jobs 如”在特定时点一次”或者”在特定时点反复”,基于时间的管理作业 Deployments 用于创建 Pod 的设定值注册信息 Jobs Job 是执行批处理的 Pod 的 Supervisor。即，如特定的计算或备份，只在特定 时间内运行的处理器 Pods 由 1 个以上容器组成的 k8s 里最小的部署单位。Pod 是在应用程序全栈中由 不同的 Docker 映像组合而成...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/7.1/",
+        "teaser":null},{
+        "title": "7.2 层积云",
+        "excerpt":"1.环境设置 为了使用层积云，事先注册信息的服务。 术语 说明 用户 为层积云使用用户，提供管理支持 账号 支持 k8s 集群用户认证信息的管理 服务 业务或项目为单位，分散管理作业。相比一般用户，管理员可赋予访问服务单位 的权限 C.集群:为了使用 k8s，管理 k8s 信息的页面 2.服务 应用程序为单位细分作业，可通过 Build 创建 Docker 映像。通过已 Build 映像，对应用程序实 施创建、查看、修改、删除等管理的服务。 术语 说明 应用程序表 k8s 的命名空间 Build 支持 Docker 映像作业的服务 监控 在应用程序内部，对服务器提供 Pod、容器为单位的资源监控 管道 从 Build 到部署，可一次性方便运行的服务 设置 应用程序单位，能保存并使用参数值或文件的服务 3.目录 通过应用程序配置的模板化，可轻松创建、部署、编辑管理服务器的服务。 4.集群 可查询集群、节点、应用程序、卷/存储、报警、计量等的注册管理以及现状的服务。 术语 说明...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/7.2/",
+        "teaser":null},{
+        "title": "7.3 层积云系统故障代码",
+        "excerpt":"1. 故障代码 代码 信息 CCCM001 无法显示具体错误代码。 CCCM002 未知错误。 CCCM004 无效函数导出的参数。 CCCM005 未经认证的请求。 CCCM006 传递信息不正确。 CCCM007 服务器、作业等不正确或者无法处理请求。 CCCM019 内部服务器错误。 CCCM020 外部导出API返回错误或导出失败。 CCCM023 无需要执行的作业。 CCCM026 发生了错误。 CCCM027 注册中发生了错误。 CCCM028 修改中发生了错误。 CCCM029 删除中发生了错误。 CCCM030 查询中发生了错误。 CDCM031 数据库作业中发生了错误。请稍后再尝试。仍未改善时，请咨询管理员。 CDCM032 数据库连接中发生了错误。请稍后再尝试。如果可以，请检查数据库连接状态，或者咨询管理员。 CKSY001 Cube集群API发生了错误。 CKSY002 层积云不支持Cube集群版本。 CKSY003 加密中发生了错误。 CCUS001 未注册的用户ID。 CCUS002 用户密码不一致。 CCUS003 用户指定权限未分配的用户。 CCUS004 已注册用户。...","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/7.3/",
+        "teaser":null},{
+        "title": "8.售后服务",
+        "excerpt":" 非常感谢使用层积云。   可享受产品功能购买咨询等技术服务以及各种优惠。所提供的各种服务如下:      可通过访问服务，咨询 Q&amp;A、产品相关信息以及其他疑问。   对客户已注册产品和可咨询产品，可通过电话或传真进行专业技术咨询服务。   提供各种活动邀请以及信息。   服务支持   邮箱 : byoungoh.lee@namutech.co.kr   产品开发商   ACON 软件(株)      地址 : 首尔特别市 江南区 驿三路 239 号 华光中心 4 层   TEL : 02-554-0301   FAX : 02-554-0302  ","categories": [],
+        "tags": [],
+        "url": "http://localhost:4000/docs/zh/8/",
         "teaser":null},]
