@@ -9,14 +9,14 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Service Management Layer - Cengjiyun Menual 3.0.0</title>
+<!-- begin _includes/seo.html --><title>Service Management Layer - Cocktail Menual 3.0.0</title>
 <meta name="description" content="An amazing website.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Cengjiyun Menual 3.0.0">
+<meta property="og:site_name" content="Cocktail Menual 3.0.0">
 <meta property="og:title" content="Service Management Layer">
 <meta property="og:url" content="http://localhost:4000/docs/en/0.3/">
 
@@ -29,7 +29,7 @@
 
 
 
-  <meta property="article:published_time" content="2018-12-04T14:11:12+09:00">
+  <meta property="article:published_time" content="2018-12-04T14:16:44+09:00">
 
 
 
@@ -67,7 +67,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cengjiyun Menual 3.0.0 Feed">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cocktail Menual 3.0.0 Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -114,7 +114,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/">Cengjiyun Menual 3.0.0</a>
+        <a class="site-title" href="/">Cocktail Menual 3.0.0</a>
         <ul class="visible-links"></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -157,7 +157,7 @@
           
           
 
-          <a href="/docs/en/0.0/"><span class="nav__sub-title">What is Cengjiyun?</span></a>
+          <a href="/docs/en/0.0/"><span class="nav__sub-title">What is Cocktail?</span></a>
         
 
         
@@ -169,7 +169,7 @@
             
             
 
-            <li><a href="/docs/en/0.1/" class="">Cengjiyun Structure Overview</a></li>
+            <li><a href="/docs/en/0.1/" class="">Cocktail Structure Overview</a></li>
           
             
             
@@ -454,7 +454,7 @@
             
             
 
-            <li><a href="/docs/en/7.2/" class="">Cengjiyun</a></li>
+            <li><a href="/docs/en/7.2/" class="">Cocktail</a></li>
           
             
             
@@ -462,7 +462,7 @@
             
             
 
-            <li><a href="/docs/en/7.3/" class="">Cengjiyun System Error Code</a></li>
+            <li><a href="/docs/en/7.3/" class="">Cocktail System Error Code</a></li>
           
         </ul>
         
@@ -507,17 +507,17 @@
         <hr />
 <p>In general, a single application or service consists of multiple containers. In particular, an orchestration engine such as Kubernetes requires additional objects such as a service port, controller, and storage volume in addition to the container. Therefore, to manage container-based applications and services, an abstraction unit is required to package and manage containers and associated objects. The service management layer fulfills this role.</p>
 
-<p>Cengjiyun service management layer has the following hierarchical structure:</p>
+<p>Cocktail service management layer has the following hierarchical structure:</p>
 
 <ul>
   <li>
-    <p>Service : Being the highest level, this group allocates and manages cluster resources, image registries, and image builds required for a service. Independent management is possible through the granting of usage privileges according to developer and administrator roles. In Cengjiyun, multiple services can be created as needed and assigned/managed by a team or service.</p>
+    <p>Service : Being the highest level, this group allocates and manages cluster resources, image registries, and image builds required for a service. Independent management is possible through the granting of usage privileges according to developer and administrator roles. In Cocktail, multiple services can be created as needed and assigned/managed by a team or service.</p>
   </li>
   <li>
     <p>Application Map : This unit configures/manages applications and corresponds to one workload. For example, a service can be configured via an application map that corresponds to development, validation, and operating systems, and the application map can be configured based on roles, such as data management and analysis systems. Logically, an application map can be considered a unit that manages multiple container configurations for workloads. The previously-described service consists of one or more application maps.</p>
   </li>
   <li>
-    <p>Cengjiyun Server : This unit packages containers and associated orchestration objects. An application map consists of one or more Cengjiyun servers. For example, a server can be configured based on components such as web and DB servers, and small-scale microservices can also be configured via a Cengjiyun server. Cengjiyun servers are described in detail in the following section.</p>
+    <p>Cocktail Server : This unit packages containers and associated orchestration objects. An application map consists of one or more Cocktail servers. For example, a server can be configured based on components such as web and DB servers, and small-scale microservices can also be configured via a Cocktail server. Cocktail servers are described in detail in the following section.</p>
   </li>
 </ul>
 
@@ -525,15 +525,15 @@
 
 <p><img src="/assets/cocktailcloud-architecture-3.png" alt="" /></p>
 
-<p><strong>Cengjiyun Server</strong></p>
+<p><strong>Cocktail Server</strong></p>
 
-<p>A Cengjiyun server has the most important role in the service management layer. As previously described, a Cengjiyun server is a unit for packaging containers and associated orchestration objects. A Cengjiyun server manages the lifecycle (creation, update, etc.) of a packaged object and monitors and manages the status and resources in package units.</p>
+<p>A Cocktail server has the most important role in the service management layer. As previously described, a Cocktail server is a unit for packaging containers and associated orchestration objects. A Cocktail server manages the lifecycle (creation, update, etc.) of a packaged object and monitors and manages the status and resources in package units.</p>
 
 <p>The following diagram describes this relationship:</p>
 
 <p><img src="/assets/cocktailcloud-architecture-4.png" alt="" /></p>
 
-<p>The management features provided via a Cengjiyun server are as follows:</p>
+<p>The management features provided via a Cocktail server are as follows:</p>
 
 <ul>
   <li>

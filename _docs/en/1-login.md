@@ -13,7 +13,7 @@ sidebar:
 
 ---
 
-Below is the initial Cengjiyun login screen.
+Below is the initial Cocktail login screen.
 
 You can log in after entering the role, ID, and password. \(Contact the administrator for ID information.\)
 

@@ -24,7 +24,7 @@ The catalog feature is divided into service catalogs and platform catalogs.
 | **Catalog Menu** | **Description** |
 | :--- | :--- |
 | Service Catalog | User-generated catalog |
-| Platform Catalog | Default catalog provided by Cengjiyun |
+| Platform Catalog | Default catalog provided by Cocktail |
 | Filter Catalog | Search for desired template |
 | Template | Collection of workloads that constitute an application |
 | Deployment | Deploy workload via catalog |

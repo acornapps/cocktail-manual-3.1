@@ -13,7 +13,7 @@ sidebar:
 
 ---
 
-The dashboard allows you to view Cengjiyun service information at a glance.
+The dashboard allows you to view Cocktail service information at a glance.
 
 * **Summary**
 

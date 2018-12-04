@@ -196,18 +196,18 @@ docs:
     children:
       - title: "Kubernetes"
         url: /docs/ko/7.1/
-      - title: "청지윈"
+      - title: "Cocktail Cloud"
         url: /docs/ko/7.2/
-      - title: "청지윈 System Error Code"
+      - title: "Cocktail Cloud System Error Code"
         url: /docs/ko/7.3/
   - title: "고객지원서비스"
     url: /docs/ko/8/
 
 en:
-  - title: "What is Cengjiyun?"
+  - title: "What is Cocktail?"
     url: /docs/en/0.0/
     children:
-      - title: "Cengjiyun Structure Overview"
+      - title: "Cocktail Structure Overview"
         url: /docs/en/0.1/
       - title: "Cluster Management Layer"
         url: /docs/en/0.2/
@@ -394,9 +394,9 @@ en:
     children:
       - title: "Kubernetes"
         url: /docs/en/7.1/
-      - title: "Cengjiyun"
+      - title: "Cocktail"
         url: /docs/en/7.2/
-      - title: "Cengjiyun System Error Code"
+      - title: "Cocktail System Error Code"
         url: /docs/en/7.3/
   - title: "Customer Support"
     url: /docs/en/8/

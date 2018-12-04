@@ -9,7 +9,7 @@ toc_sticky: false
 ---
 
 ---
-아래는 청지윈의 초기 로그인 화면이다.
+아래는 Cocktail Cloud의 초기 로그인 화면이다.
 
 Role, ID, Password 입력 후 로그인 할 수 있다.
 

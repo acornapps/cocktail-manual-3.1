@@ -9,14 +9,14 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>服务管理层(Service Management Layer) - Cengjiyun Menual 3.0.0</title>
+<!-- begin _includes/seo.html --><title>服务管理层(Service Management Layer) - Cocktail Menual 3.0.0</title>
 <meta name="description" content="An amazing website.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Cengjiyun Menual 3.0.0">
+<meta property="og:site_name" content="Cocktail Menual 3.0.0">
 <meta property="og:title" content="服务管理层(Service Management Layer)">
 <meta property="og:url" content="http://localhost:4000/docs/zh/0.3/">
 
@@ -29,7 +29,7 @@
 
 
 
-  <meta property="article:published_time" content="2018-12-04T14:11:12+09:00">
+  <meta property="article:published_time" content="2018-12-04T14:16:44+09:00">
 
 
 
@@ -67,7 +67,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cengjiyun Menual 3.0.0 Feed">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cocktail Menual 3.0.0 Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -114,7 +114,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/">Cengjiyun Menual 3.0.0</a>
+        <a class="site-title" href="/">Cocktail Menual 3.0.0</a>
         <ul class="visible-links"></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -512,14 +512,14 @@
 <ul>
   <li>服务(Service) : 是最上游阶层，分配和管理服务所必要的集群资源、映像注册表、映像 Build 的群组。根据开发人员和运营人员的角色赋予权限，能独立进行管理。层积云可根据需求， 创建多个服务，并按组或服务分配以及管理。</li>
   <li>应用程序表(Application Map) : 是组成和管理应用程序的单位，相当于一个工作负载 (Workload)。例如一个服务可以由开发阶层、验证阶层、运营阶层的应用程序表组成，也 可以按照数据管理、分析系统类似功能组成应用程序表。从逻辑角度上，可以说应用程表 是管理工作负载为目的的由多个容器组成的单位。如前所述，服务由一个以上的应用程序 表组成。</li>
-  <li>层积云服务器(Cengjiyun Server) : 是容器和相关编排对象的压缩单位。应用程序表由一个 以上的层积云服务器组成。例如，可以 Web 服务器、DB 服务器等类似组件为准组成服务 器，也可以由小规模微服务为准组成层积云服务器。关于层积云服务器，后面进一步详细 说明。</li>
+  <li>层积云服务器(Cocktail Server) : 是容器和相关编排对象的压缩单位。应用程序表由一个 以上的层积云服务器组成。例如，可以 Web 服务器、DB 服务器等类似组件为准组成服务 器，也可以由小规模微服务为准组成层积云服务器。关于层积云服务器，后面进一步详细 说明。</li>
 </ul>
 
 <p>下图是服务管理图层的配置图。</p>
 
 <p><img src="/assets/KR/3.0.0/cocktailcloud-architecture-3.png" alt="" /></p>
 
-<p><strong>层积云服务器(Cengjiyun Server)</strong></p>
+<p><strong>层积云服务器(Cocktail Server)</strong></p>
 
 <p>层积云服务器在服务管理层发挥最核心的功能。如前所述，层积云服务器是容器和相关编排对 象的压缩单位。层积云管理压缩对象的创建、更新等生命周期，同时把状态和资源作为一个压 缩单位进行监控以及管理。
 以下是图实例。</p>

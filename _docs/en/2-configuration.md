@@ -13,10 +13,10 @@ sidebar:
 
 ---
 
-Environment settings allow user, account, and service management required to use Cengjiyun.![]({{ site.baseurl }}/assets/EN/3.0.0/2_1.png)
+Environment settings allow user, account, and service management required to use Cocktail.![]({{ site.baseurl }}/assets/EN/3.0.0/2_1.png)
 
 | Environment | **Description** |
 | :--- | :--- |
-| User | Cengjiyun user |
+| User | Cocktail user |
 | Account | Public/private cloud account information to be used as a cloud resource |
 | Service | Workspace that can build, deploy, and operate applications |

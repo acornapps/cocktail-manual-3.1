@@ -1,16 +1,16 @@
 var store = [{
-        "title": "What is Cengjiyun?",
-        "excerpt":"Cengjiyun is an all-in-one container management platform. As the use of cloud computing became widespread, there has been a growing demand for infrastructure and application service management. This can be attributed to the limitations in utilizing the advantages of the cloud with past development and operations methods. In the applications...","categories": [],
+        "title": "What is Cocktail?",
+        "excerpt":"Cocktail is an all-in-one container management platform. As the use of cloud computing became widespread, there has been a growing demand for infrastructure and application service management. This can be attributed to the limitations in utilizing the advantages of the cloud with past development and operations methods. In the applications...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/0.0/",
         "teaser":null},{
-        "title": "Cengjiyun Structure Overview",
-        "excerpt":"Cengjiyun is comprised of five layers that correspond to its various roles. Cluster Management Layer: Responsible for infrastructure (cluster), where containers are deployed/executed, and orchestration. Kubernetes (https://kubernetes.io) handles orchestration and provides scaling management functions such as infrastructure management and monitoring. Service Management Layer: Responsible for container configuration and management based...","categories": [],
+        "title": "Cocktail Structure Overview",
+        "excerpt":"Cocktail is comprised of five layers that correspond to its various roles. Cluster Management Layer: Responsible for infrastructure (cluster), where containers are deployed/executed, and orchestration. Kubernetes (https://kubernetes.io) handles orchestration and provides scaling management functions such as infrastructure management and monitoring. Service Management Layer: Responsible for container configuration and management based...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/0.1/",
         "teaser":null},{
         "title": "Cluster Management Layer",
-        "excerpt":"The cluster management layer is divided into the infrastructure, which consists of clusters, and the container orchestration engine. The detailed configuration is as follows: Cengjiyun automatically provisions the cluster infrastructure and orchestration engine according to user configuration. The tool responsible for this is Cube. Cube constitutes high-availability (HA) Kubernetes clusters....","categories": [],
+        "excerpt":"The cluster management layer is divided into the infrastructure, which consists of clusters, and the container orchestration engine. The detailed configuration is as follows: Cocktail automatically provisions the cluster infrastructure and orchestration engine according to user configuration. The tool responsible for this is Cube. Cube constitutes high-availability (HA) Kubernetes clusters....","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/0.2/",
         "teaser":null},{
@@ -30,22 +30,22 @@ var store = [{
         "url": "http://localhost:4000/docs/en/0.5/",
         "teaser":null},{
         "title": "Dashboard Layer",
-        "excerpt":"The dashboard layer provides service status, monitoring, and cluster status information via a web-based UI. The dashboard provides role-specific views according to user privileges. Cengjiyun user privileges are as follows: Administrator : The admin manages clusters and has administrative privileges on all Cengjiyun services. DevOps : A DevOps user has...","categories": [],
+        "excerpt":"The dashboard layer provides service status, monitoring, and cluster status information via a web-based UI. The dashboard provides role-specific views according to user privileges. Cocktail user privileges are as follows: Administrator : The admin manages clusters and has administrative privileges on all Cocktail services. DevOps : A DevOps user has...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/0.6/",
         "teaser":null},{
         "title": "1.Login",
-        "excerpt":"Below is the initial Cengjiyun login screen. You can log in after entering the role, ID, and password. (Contact the administrator for ID information.) The password must be changed when first connecting or initializing the password. You can change your password or extend your password even after 90 days have...","categories": [],
+        "excerpt":"Below is the initial Cocktail login screen. You can log in after entering the role, ID, and password. (Contact the administrator for ID information.) The password must be changed when first connecting or initializing the password. You can change your password or extend your password even after 90 days have...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/1/",
         "teaser":null},{
         "title": "2.Environment Settings",
-        "excerpt":"  Environment settings allow user, account, and service management required to use Cengjiyun.                  Environment       Description                       User       Cengjiyun user                 Account       Public/private cloud account information to be used as a cloud resource                 Service       Workspace that can build, deploy, and operate applications          ","categories": [],
+        "excerpt":"  Environment settings allow user, account, and service management required to use Cocktail.                  Environment       Description                       User       Cocktail user                 Account       Public/private cloud account information to be used as a cloud resource                 Service       Workspace that can build, deploy, and operate applications          ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/2/",
         "teaser":null},{
         "title": "2.1 Users",
-        "excerpt":"The user account list can be filtered by All, Active, or Inactive. (‘Y’ and ‘N’ accounts are displayed when ‘Active’ and ‘Inactive’ are selected, respectively.) Cengjiyun user accounts can be created, edited, and deleted, and ADMIN and DEVOPS privileges can be granted according to the account. a) Configuration → User...","categories": [],
+        "excerpt":"The user account list can be filtered by All, Active, or Inactive. (‘Y’ and ‘N’ accounts are displayed when ‘Active’ and ‘Inactive’ are selected, respectively.) Cocktail user accounts can be created, edited, and deleted, and ADMIN and DEVOPS privileges can be granted according to the account. a) Configuration → User...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/2.1/",
         "teaser":null},{
@@ -400,7 +400,7 @@ var store = [{
         "url": "http://localhost:4000/docs/en/5.6/",
         "teaser":null},{
         "title": "6.Dashboard",
-        "excerpt":"The dashboard allows you to view Cengjiyun service information at a glance. Summary Displays the number of currently-registered/managed applications, workloads clusters, and the total cloud cost for the current month. Resource Status You can check the total amount of CPU, memory, requested amount, usage, storage (Node, Pv) and usage. Cluster...","categories": [],
+        "excerpt":"The dashboard allows you to view Cocktail service information at a glance. Summary Displays the number of currently-registered/managed applications, workloads clusters, and the total cloud cost for the current month. Resource Status You can check the total amount of CPU, memory, requested amount, usage, storage (Node, Pv) and usage. Cluster...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/6/",
         "teaser":null},{
@@ -410,7 +410,7 @@ var store = [{
         "url": "http://localhost:4000/docs/en/6.1/",
         "teaser":null},{
         "title": "7.Glossary",
-        "excerpt":"  The following section provides a list of common Kubernetes and Cengjiyun terminologies and explanations.  ","categories": [],
+        "excerpt":"  The following section provides a list of common Kubernetes and Cocktail terminologies and explanations.  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/7/",
         "teaser":null},{
@@ -419,18 +419,18 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/docs/en/7.1/",
         "teaser":null},{
-        "title": "7.2 Cengjiyun",
-        "excerpt":"1.Environment Settings Service for pre-registering information to use Cengjiyun Term Description User User management for use of Cengjiyun Account Management of user credentials for k8s clusters Service Distributes and manages tasks on a job or project basis. The administrator may grant access privileges to general users on a service basis...","categories": [],
+        "title": "7.2 Cocktail",
+        "excerpt":"1.Environment Settings Service for pre-registering information to use Cocktail Term Description User User management for use of Cocktail Account Management of user credentials for k8s clusters Service Distributes and manages tasks on a job or project basis. The administrator may grant access privileges to general users on a service basis...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/7.2/",
         "teaser":null},{
-        "title": "7.3 Cengjiyun System Error Code",
+        "title": "7.3 Cocktail System Error Code",
         "excerpt":"1. Error Code Code Message CCCM001 Can not reveal specific error number. CCCM002 Unknown error CCCM004 Invalid function call argument CCCM005 Unauthorized request CCCM006 The information passed is not correct CCCM007 Server, job, etc. are not correct or can not process request CCCM019 Internal server error CCCM020 External call API...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/7.3/",
         "teaser":null},{
         "title": "8.Customer Support",
-        "excerpt":"Thank you for using Cengjiyun. Contact us for technical support and product purchase consultations. We provide the following services: On-site Q&amp;A and product consultation services. Professional technical consultations via telephone or fax. (Limited to customers who have registered their products) Various event invitations and information. Support Email: byoungoh.lee@namutech.co.kr Product Developer...","categories": [],
+        "excerpt":"Thank you for using Cocktail. Contact us for technical support and product purchase consultations. We provide the following services: On-site Q&amp;A and product consultation services. Professional technical consultations via telephone or fax. (Limited to customers who have registered their products) Various event invitations and information. Support Email: byoungoh.lee@namutech.co.kr Product Developer...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/en/8/",
         "teaser":null},{
@@ -439,28 +439,28 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/",
         "teaser":null},{
-        "title": "청지윈이 란?",
-        "excerpt":"청지윈은 올인원 컨테이너 관리 플랫폼(All-in-one Container Management Platform)이다. 클라우드 사용이 보편화 되면서, 인프라 뿐 아니라 어플리케이션, 서비스 관리에 대한 요구가 높아지고 있다. 과거와 같은 개발, 운영 방식으로는 클라우드의 장점을 활용하기에 한계가 있기 때문이다. 특히 어플리케이션 영역에서는 지속적인 통합 및 배포(Continuous Integration/Deploy, CI/CD), 마이그레이션(Migration), 멀티/하이브리드 클라우드 구축 등 자동화, 효율화, 통합...","categories": [],
+        "title": "Cocktail Cloud이 란?",
+        "excerpt":"Cocktail Cloud은 올인원 컨테이너 관리 플랫폼(All-in-one Container Management Platform)이다. 클라우드 사용이 보편화 되면서, 인프라 뿐 아니라 어플리케이션, 서비스 관리에 대한 요구가 높아지고 있다. 과거와 같은 개발, 운영 방식으로는 클라우드의 장점을 활용하기에 한계가 있기 때문이다. 특히 어플리케이션 영역에서는 지속적인 통합 및 배포(Continuous Integration/Deploy, CI/CD), 마이그레이션(Migration), 멀티/하이브리드 클라우드 구축 등 자동화, 효율화,...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/0.0/",
         "teaser":null},{
-        "title": "청지윈 구성 개요",
-        "excerpt":"청지윈은 그 역할에 따라 5개의 레이어로 구성된다. Cluster Management Layer: 컨테이너가 배포/실행되는 인프라(클러스터)와 오케스트레이션(Orchestration)을 담당하는 레이어다. 오케스트레이션은 Kubernetes(https://kubernetes.io)가 담당하고 인프라 관리, 모니터링 등 확장 관리 기능을 제공한다. Service Management Layer: 서비스(Workload)를 기준으로 컨테이너 구성과 관리를 담당하는 레이어다. 서비스를 구성하는 다수의 컨테이너와 관련 객체를 패키징하고 그 수명주기와 모니터링을 관리한다. Pipeline: 코드에서...","categories": [],
+        "title": "Cocktail Cloud 구성 개요",
+        "excerpt":"Cocktail Cloud은 그 역할에 따라 5개의 레이어로 구성된다. Cluster Management Layer: 컨테이너가 배포/실행되는 인프라(클러스터)와 오케스트레이션(Orchestration)을 담당하는 레이어다. 오케스트레이션은 Kubernetes(https://kubernetes.io)가 담당하고 인프라 관리, 모니터링 등 확장 관리 기능을 제공한다. Service Management Layer: 서비스(Workload)를 기준으로 컨테이너 구성과 관리를 담당하는 레이어다. 서비스를 구성하는 다수의 컨테이너와 관련 객체를 패키징하고 그 수명주기와 모니터링을 관리한다. Pipeline:...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/0.1/",
         "teaser":null},{
         "title": "Cluster Management Layer (클러스터 관리 레이어)",
-        "excerpt":"클러스터 관리 레이어는 클러스터를 구성하는 인프라 스트럭처와 컨테이너 오케스트레이션 엔진 부분으로 구분된다. 상세 구성은 아래 그림과 같다. 청지윈은 클러스터 인프라와 오케스트레이션 엔진을 사용자의 설정에 따라 자동 프로비져닝(Provisioning)하는데 이를 담당하는 도구가CUBE이다. CUBE는 고가용(High Availability, HA)의 Kubernetes클러스터를 구성한다. CUBE가 프로비져닝하는 클러스터 구성은 높은 안정성과 보안, 확장성을 제공한다.(이를 CUBE클러스터라 한다.) CUBE클러스터는 현재 다음과...","categories": [],
+        "excerpt":"클러스터 관리 레이어는 클러스터를 구성하는 인프라 스트럭처와 컨테이너 오케스트레이션 엔진 부분으로 구분된다. 상세 구성은 아래 그림과 같다. Cocktail Cloud은 클러스터 인프라와 오케스트레이션 엔진을 사용자의 설정에 따라 자동 프로비져닝(Provisioning)하는데 이를 담당하는 도구가CUBE이다. CUBE는 고가용(High Availability, HA)의 Kubernetes클러스터를 구성한다. CUBE가 프로비져닝하는 클러스터 구성은 높은 안정성과 보안, 확장성을 제공한다.(이를 CUBE클러스터라 한다.) CUBE클러스터는 현재...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/0.2/",
         "teaser":null},{
         "title": "Service Management Layer (서비스 관리 레이어)",
-        "excerpt":"일반적으로 하나의 어플리케이션 및 서비스는 다수의 컨테이너로 구성된다. 특히 Kubernetes와 같은 오케스트레이션 엔진의 경우 컨테이너 외에도 서비스 포트, 컨트롤러, 볼륨등의 추가적인 객체를 필요로 한다. 따라서 컨테이너 기반의 어플리케이션 및 서비스를 관리하기 위해서는 컨테이너와 관련 객체를 패키징하고 관리하는 추상화 단위가 필요하다. 서비스 관리 레이어는 이를 담당하는 레이어다. 청지윈의 서비스 관리는 다음과...","categories": [],
+        "excerpt":"일반적으로 하나의 어플리케이션 및 서비스는 다수의 컨테이너로 구성된다. 특히 Kubernetes와 같은 오케스트레이션 엔진의 경우 컨테이너 외에도 서비스 포트, 컨트롤러, 볼륨등의 추가적인 객체를 필요로 한다. 따라서 컨테이너 기반의 어플리케이션 및 서비스를 관리하기 위해서는 컨테이너와 관련 객체를 패키징하고 관리하는 추상화 단위가 필요하다. 서비스 관리 레이어는 이를 담당하는 레이어다. Cocktail Cloud의 서비스 관리는...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/0.3/",
         "teaser":null},{
         "title": "Pipeline Layer (파이프라인 레이어)",
-        "excerpt":"파이프라인 레이어는 코드로부터 컨테이너 빌드와 배포를 자동화 한다. Build는 코드 다운로드, 코드 빌드 및 테스트등 작업(Task), 컨테이너 이미지 빌드를 사용자 설정을 기준으로 순차적으로 수행한다. 작업(Task)은 내부에서 작업을 수행하는 컨테이너를 사용하는데, 기본 제공되는 컨테이너 외에도 공개 또는 사용자가 만든 컨테이너를 사용하여 확장 할 수 있다. 빌드 된 이미지는 청지윈 서버의 컨테이너로...","categories": [],
+        "excerpt":"파이프라인 레이어는 코드로부터 컨테이너 빌드와 배포를 자동화 한다. Build는 코드 다운로드, 코드 빌드 및 테스트등 작업(Task), 컨테이너 이미지 빌드를 사용자 설정을 기준으로 순차적으로 수행한다. 작업(Task)은 내부에서 작업을 수행하는 컨테이너를 사용하는데, 기본 제공되는 컨테이너 외에도 공개 또는 사용자가 만든 컨테이너를 사용하여 확장 할 수 있다. 빌드 된 이미지는 Cocktail Cloud 서버의...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/0.4/",
         "teaser":null},{
@@ -470,32 +470,32 @@ var store = [{
         "url": "http://localhost:4000/docs/ko/0.5/",
         "teaser":null},{
         "title": "Dashboard Layer (대시보드 레이어)",
-        "excerpt":"청지윈의 대시보드 레이어는 서비스 현황, 모니터링, 클러스터 현황 등을 웹UI형태로 제공한다. 대시보드는 사용자의 역할에 맞는 뷰를 권한에 따라 제공한다. 청지윈의 사용자 권한은 다음과 같다. Administrator(Admin) : 클러스터 관리를 수행하고, 청지윈의 모든 서비스에 대해 관리 권한을 가진다. DevOps : 할당된 하나 이상의 서비스에 대해서만 관리 권한을 가진다. 대시보드는 권한이 있는 서비스만...","categories": [],
+        "excerpt":"Cocktail Cloud의 대시보드 레이어는 서비스 현황, 모니터링, 클러스터 현황 등을 웹UI형태로 제공한다. 대시보드는 사용자의 역할에 맞는 뷰를 권한에 따라 제공한다. Cocktail Cloud의 사용자 권한은 다음과 같다. Administrator(Admin) : 클러스터 관리를 수행하고, Cocktail Cloud의 모든 서비스에 대해 관리 권한을 가진다. DevOps : 할당된 하나 이상의 서비스에 대해서만 관리 권한을 가진다. 대시보드는...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/0.6/",
         "teaser":null},{
         "title": "1. 로그인",
-        "excerpt":" 아래는 청지윈의 초기 로그인 화면이다.   Role, ID, Password 입력 후 로그인 할 수 있다.   (아이디는 관리자에게 별도 문의)      최초 접속 또는 비밀번호 초기화시에는 반드시 비밀번호를 변경 해야한다.      기간이 90일이 경과한 경우에도 비밀번호를 변경하거나 비밀번호를 연장 할 수 있다.     ","categories": [],
+        "excerpt":" 아래는 Cocktail Cloud의 초기 로그인 화면이다.   Role, ID, Password 입력 후 로그인 할 수 있다.   (아이디는 관리자에게 별도 문의)      최초 접속 또는 비밀번호 초기화시에는 반드시 비밀번호를 변경 해야한다.      기간이 90일이 경과한 경우에도 비밀번호를 변경하거나 비밀번호를 연장 할 수 있다.     ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/1/",
         "teaser":null},{
         "title": "2.환경 설정",
-        "excerpt":" 환경설정을 통해 층적 이용에 필요한 사용자, 계정, 서비스 관리를 할 수 있다.                     환경 설정 메뉴       설명                       사용자       청지윈을 사용하는 유저                 계정       Cloud 리소스로 사용 할 Public/Private 클라우드 계정 정보                 서비스       어플리케이션을 빌드 및 배포, 운영 할 수 있는 Workspace          ","categories": [],
+        "excerpt":" 환경설정을 통해 층적 이용에 필요한 사용자, 계정, 서비스 관리를 할 수 있다.                     환경 설정 메뉴       설명                       사용자       Cocktail Cloud을 사용하는 유저                 계정       Cloud 리소스로 사용 할 Public/Private 클라우드 계정 정보                 서비스       어플리케이션을 빌드 및 배포, 운영 할 수 있는 Workspace          ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/2/",
         "teaser":null},{
         "title": "2.1 사용자",
-        "excerpt":"사용자 계정 목록을 전체/사용/미사용으로 분류하여 조회할 수 있다.(사용여부가 Y인 계정은 ‘사용’, N인 계정은 ‘미사용’ 선택 시 표시) 청지윈 사용자 계정을 생성 및 수정, 삭제할 수 있으며 계정에 따라 ADMIN, DEVOPS 권한을 줄 수 있다. a) 환경설정 → 사용자 → 사용여부 버튼을 클릭하여 ‘전체/사용/미사용’ 중 하나를 선택한다. 사용자 설정 사용자 설정...","categories": [],
+        "excerpt":"사용자 계정 목록을 전체/사용/미사용으로 분류하여 조회할 수 있다.(사용여부가 Y인 계정은 ‘사용’, N인 계정은 ‘미사용’ 선택 시 표시) Cocktail Cloud 사용자 계정을 생성 및 수정, 삭제할 수 있으며 계정에 따라 ADMIN, DEVOPS 권한을 줄 수 있다. a) 환경설정 → 사용자 → 사용여부 버튼을 클릭하여 ‘전체/사용/미사용’ 중 하나를 선택한다. 사용자 설정 사용자...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/2.1/",
         "teaser":null},{
         "title": "2.1.1 사용자 추가",
-        "excerpt":"청지윈 사용자 추가 기능이다. 사용자 아이디는 반드시 이메일 형식( user@example.com )이어야 하며 패스워드 설정기능은 현재 지원하고 있지 않으니 아이디 생성 후에는 반드시 비밀번호 초기화 후 변경하여 사용해야 한다. (초기화 후 제공받는 초기 비밀번호는 ‘Pass0000’이다.) a) 환경설정 → 사용자 → 우측상단 사용자 생성 버튼 클릭한다. b) 사용자 아이디, 이름, 권한을 선택...","categories": [],
+        "excerpt":"Cocktail Cloud 사용자 추가 기능이다. 사용자 아이디는 반드시 이메일 형식( user@example.com )이어야 하며 패스워드 설정기능은 현재 지원하고 있지 않으니 아이디 생성 후에는 반드시 비밀번호 초기화 후 변경하여 사용해야 한다. (초기화 후 제공받는 초기 비밀번호는 ‘Pass0000’이다.) a) 환경설정 → 사용자 → 우측상단 사용자 생성 버튼 클릭한다. b) 사용자 아이디, 이름, 권한을...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/2.1.1/",
         "teaser":null},{
         "title": "2.1.2 사용자 편집",
-        "excerpt":" 청지윈 사용자 정보를 편집 하는 기능 이다.   a) 환경설정 → 사용자 → 사용자 액션 메뉴 → 사용자 편집 → 수정완료 후 수정버튼을 클릭한다.     b) 사용자 아이디를 제외한 이름, 상태 및 권한 수정이 가능하다.                    상태       설명                       Active       사용자 활성화                 Inactive       사용자 비활성          ","categories": [],
+        "excerpt":" Cocktail Cloud 사용자 정보를 편집 하는 기능 이다.   a) 환경설정 → 사용자 → 사용자 액션 메뉴 → 사용자 편집 → 수정완료 후 수정버튼을 클릭한다.     b) 사용자 아이디를 제외한 이름, 상태 및 권한 수정이 가능하다.                    상태       설명                       Active       사용자 활성화                 Inactive       사용자 비활성          ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/2.1.2/",
         "teaser":null},{
@@ -505,7 +505,7 @@ var store = [{
         "url": "http://localhost:4000/docs/ko/2.1.3/",
         "teaser":null},{
         "title": "2.1.4 사용자 비밀번호 초기화",
-        "excerpt":" 청지윈 사용자 비밀번호를 초기화 하는 기능이다.(초기화 후 제공받는 초기 비밀번호는 ‘Pass0000’이다.)   a) 환경설정 → 사용자 → 사용자 액션 메뉴 → 사용자 비밀번호 초기화를 클릭한다.    ","categories": [],
+        "excerpt":" Cocktail Cloud 사용자 비밀번호를 초기화 하는 기능이다.(초기화 후 제공받는 초기 비밀번호는 ‘Pass0000’이다.)   a) 환경설정 → 사용자 → 사용자 액션 메뉴 → 사용자 비밀번호 초기화를 클릭한다.    ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/2.1.4/",
         "teaser":null},{
@@ -745,7 +745,7 @@ var store = [{
         "url": "http://localhost:4000/docs/ko/3.2.7/",
         "teaser":null},{
         "title": "4.카탈로그",
-        "excerpt":"어플리케이션 구성을 템플릿화하여 쉽게 워크로드 생성 및 배포, 관리가 가능한 기능이다. 여러 워크로드들을 한 번에 묶어 사용하고자 하는 경우 카탈로그 기능을 사용한다. 카탈로그는 서비스 카탈로그와 플랫폼 카탈로그로 구분된다. 카탈로그 메뉴 설명 서비스 카탈로그 사용자가 생성한 카탈로그 플렛폼 카탈로그 청지윈 기본 제공 공식 카탈로그 Filter Catalog 검색을 통해 필요한 템플릿 조회...","categories": [],
+        "excerpt":"어플리케이션 구성을 템플릿화하여 쉽게 워크로드 생성 및 배포, 관리가 가능한 기능이다. 여러 워크로드들을 한 번에 묶어 사용하고자 하는 경우 카탈로그 기능을 사용한다. 카탈로그는 서비스 카탈로그와 플랫폼 카탈로그로 구분된다. 카탈로그 메뉴 설명 서비스 카탈로그 사용자가 생성한 카탈로그 플렛폼 카탈로그 Cocktail Cloud 기본 제공 공식 카탈로그 Filter Catalog 검색을 통해 필요한 템플릿...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/4/",
         "teaser":null},{
@@ -840,7 +840,7 @@ var store = [{
         "url": "http://localhost:4000/docs/ko/5.6/",
         "teaser":null},{
         "title": "6.대시보드",
-        "excerpt":"대시보드에서는 청지윈에 서비스된 정보를 한 눈에 확인 할 수 있다. 요약정보 현재 등록 관리되고 있는 어플리케이션 개수, 워크로드 개수, 등록된 클러스터 수, 현재 발생한 알람의 개수를 볼 수 있다. 자원현황 CPU, Memory의 전체량, 요청량, 사용량과 Storage(Node, Pv) 전체, 사용량을 확인 할 수 있다. 공급자 별 클러스터 현황 공급자 별 등록된...","categories": [],
+        "excerpt":"대시보드에서는 Cocktail Cloud에 서비스된 정보를 한 눈에 확인 할 수 있다. 요약정보 현재 등록 관리되고 있는 어플리케이션 개수, 워크로드 개수, 등록된 클러스터 수, 현재 발생한 알람의 개수를 볼 수 있다. 자원현황 CPU, Memory의 전체량, 요청량, 사용량과 Storage(Node, Pv) 전체, 사용량을 확인 할 수 있다. 공급자 별 클러스터 현황 공급자 별...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/6/",
         "teaser":null},{
@@ -850,7 +850,7 @@ var store = [{
         "url": "http://localhost:4000/docs/ko/6.1/",
         "teaser":null},{
         "title": "7.용어 설명",
-        "excerpt":" 청지윈 활용의 이해를 돕기 위한 Kubernetes 및 청지원 용어 정리이다.  ","categories": [],
+        "excerpt":" Cocktail Cloud 활용의 이해를 돕기 위한 Kubernetes 및 청지원 용어 정리이다.  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/7/",
         "teaser":null},{
@@ -859,18 +859,18 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/docs/ko/7.1/",
         "teaser":null},{
-        "title": "7.2 청지윈",
-        "excerpt":"1.환경설정 청지윈을 이용하기 위해서 사전에 정보를 등록하는 서비스 용어 설명 사용자 청지윈을 이용하기 위한 사용자 관리를 지원 계정 k8s Cluster에 대한 사용자 인증 정보에 대한 관리를 지원 서비스 업무 또는 프로젝트 단위로 작업을 분산하여 관리. 관리자는 일반사용자에 대하여 서비스 단위로 접근권한을 부여할 수 있다. C.클러스터 : k8s를 사용하기 위한 k8s정보를...","categories": [],
+        "title": "7.2 Cocktail Cloud",
+        "excerpt":"1.환경설정 Cocktail Cloud을 이용하기 위해서 사전에 정보를 등록하는 서비스 용어 설명 사용자 Cocktail Cloud을 이용하기 위한 사용자 관리를 지원 계정 k8s Cluster에 대한 사용자 인증 정보에 대한 관리를 지원 서비스 업무 또는 프로젝트 단위로 작업을 분산하여 관리. 관리자는 일반사용자에 대하여 서비스 단위로 접근권한을 부여할 수 있다. C.클러스터 : k8s를 사용하기...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/7.2/",
         "teaser":null},{
-        "title": "7.3 청지윈 System Error Code",
+        "title": "7.3 Cocktail Cloud System Error Code",
         "excerpt":"1. 에러 코드 코드 메시지 CCCM001 구체적 오류 번호를 밝힐 수 없음. CCCM002 알수 없는 오류 입니다 CCCM004 잘못된 함수 호출 인자입니다 CCCM005 인증되지 않은 요청입니다 CCCM006 전달된 정보가 올바르지 않습니다 CCCM007 서버, 작업 등이 올바르지 않거나 요청을 처리할 수 없습니다 CCCM019 내부 서버 오류 CCCM020 외부 호출 API가 오류를...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/7.3/",
         "teaser":null},{
         "title": "8.고객지원 서비스",
-        "excerpt":"청지윈을 이용해 주셔서 감사합니다. 제품 구매 기능상담 등의 기술 지원 서비스 및 각종 혜택을 받을 수 있습니다. 제공하는 각종 서비스는 다음과 같습니다. 방문 서비스를 통하여 Q&amp;A, 제품에 관한 정보 및 기타 문의를 할 수 있습니다. 고객 등록을 마친 제품과 상담이 가능한 제품에 한하여 전화나 팩스를 통하여 전문 기술상담 서비스를 받을...","categories": [],
+        "excerpt":"Cocktail Cloud을 이용해 주셔서 감사합니다. 제품 구매 기능상담 등의 기술 지원 서비스 및 각종 혜택을 받을 수 있습니다. 제공하는 각종 서비스는 다음과 같습니다. 방문 서비스를 통하여 Q&amp;A, 제품에 관한 정보 및 기타 문의를 할 수 있습니다. 고객 등록을 마친 제품과 상담이 가능한 제품에 한하여 전화나 팩스를 통하여 전문 기술상담 서비스를...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/ko/8/",
         "teaser":null},{
@@ -890,7 +890,7 @@ var store = [{
         "url": "http://localhost:4000/docs/zh/0.2/",
         "teaser":null},{
         "title": "服务管理层(Service Management Layer)",
-        "excerpt":"通常情况下一个应用程序及服务由多个容器组成。尤其是类似 Kubernetes 的编排引擎，容器以 外还需额外增加服务端口、控制器、卷等对象。因此基于容器的应用程序及服务管理，需要压 缩和管理容器以及相关对象的抽象单位。服务管理层就是负责该领域的图层。 层积云的服务管理拥有如下阶层架构。 服务(Service) : 是最上游阶层，分配和管理服务所必要的集群资源、映像注册表、映像 Build 的群组。根据开发人员和运营人员的角色赋予权限，能独立进行管理。层积云可根据需求， 创建多个服务，并按组或服务分配以及管理。 应用程序表(Application Map) : 是组成和管理应用程序的单位，相当于一个工作负载 (Workload)。例如一个服务可以由开发阶层、验证阶层、运营阶层的应用程序表组成，也 可以按照数据管理、分析系统类似功能组成应用程序表。从逻辑角度上，可以说应用程表 是管理工作负载为目的的由多个容器组成的单位。如前所述，服务由一个以上的应用程序 表组成。 层积云服务器(Cengjiyun Server) : 是容器和相关编排对象的压缩单位。应用程序表由一个 以上的层积云服务器组成。例如，可以 Web 服务器、DB 服务器等类似组件为准组成服务 器，也可以由小规模微服务为准组成层积云服务器。关于层积云服务器，后面进一步详细 说明。 下图是服务管理图层的配置图。 层积云服务器(Cengjiyun Server) 层积云服务器在服务管理层发挥最核心的功能。如前所述，层积云服务器是容器和相关编排对 象的压缩单位。层积云管理压缩对象的创建、更新等生命周期，同时把状态和资源作为一个压 缩单位进行监控以及管理。 以下是图实例。 层积云提供的管理职能有如下内容: 工作负载的创建、修改(更新)、停止、重启、删除、自动缩放 滚动更新 卷管理 服务端口管理 监控 检查 : 编排对象的状态以及部署信息查询 网络终端、日志查询 : 容器壳连接、容器日志查询 上文...","categories": [],
+        "excerpt":"通常情况下一个应用程序及服务由多个容器组成。尤其是类似 Kubernetes 的编排引擎，容器以 外还需额外增加服务端口、控制器、卷等对象。因此基于容器的应用程序及服务管理，需要压 缩和管理容器以及相关对象的抽象单位。服务管理层就是负责该领域的图层。 层积云的服务管理拥有如下阶层架构。 服务(Service) : 是最上游阶层，分配和管理服务所必要的集群资源、映像注册表、映像 Build 的群组。根据开发人员和运营人员的角色赋予权限，能独立进行管理。层积云可根据需求， 创建多个服务，并按组或服务分配以及管理。 应用程序表(Application Map) : 是组成和管理应用程序的单位，相当于一个工作负载 (Workload)。例如一个服务可以由开发阶层、验证阶层、运营阶层的应用程序表组成，也 可以按照数据管理、分析系统类似功能组成应用程序表。从逻辑角度上，可以说应用程表 是管理工作负载为目的的由多个容器组成的单位。如前所述，服务由一个以上的应用程序 表组成。 层积云服务器(Cocktail Server) : 是容器和相关编排对象的压缩单位。应用程序表由一个 以上的层积云服务器组成。例如，可以 Web 服务器、DB 服务器等类似组件为准组成服务 器，也可以由小规模微服务为准组成层积云服务器。关于层积云服务器，后面进一步详细 说明。 下图是服务管理图层的配置图。 层积云服务器(Cocktail Server) 层积云服务器在服务管理层发挥最核心的功能。如前所述，层积云服务器是容器和相关编排对 象的压缩单位。层积云管理压缩对象的创建、更新等生命周期，同时把状态和资源作为一个压 缩单位进行监控以及管理。 以下是图实例。 层积云提供的管理职能有如下内容: 工作负载的创建、修改(更新)、停止、重启、删除、自动缩放 滚动更新 卷管理 服务端口管理 监控 检查 : 编排对象的状态以及部署信息查询 网络终端、日志查询 : 容器壳连接、容器日志查询 上文...","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/zh/0.3/",
         "teaser":null},{
@@ -925,7 +925,7 @@ var store = [{
         "url": "http://localhost:4000/docs/zh/2.1/",
         "teaser":null},{
         "title": "2.1.1 用户添加",
-        "excerpt":" 添加层积云用户的功能。   用户 ID 必须是邮件格式(cengjiyun@example.com)，因为当前不支持密码设置功能，所以创建 ID 后，必须进行密码初始化修改使用。 (初始化后提供的初始密码为‘Pass0000’)   a) 点击环境设置→用户→右上角的用户创建。    b) 选择用户 ID、名称、权限后，点击‘创建’按钮。                    权限       仪表盘       服务       目录       集群       环境设置                       ADMIN       ⃝       ⃝       ⃝       ⃝       ⃝                 DEVOPS       X       △       ⃝       X       X           - ADMIN : 抄录服务管理。可使用仪表盘、服务、目录、集群、环境设置菜单   - DEVOPS : 管理被分配到会员的服务。可使用服务和目录，可查询集群  ","categories": [],
+        "excerpt":" 添加层积云用户的功能。   用户 ID 必须是邮件格式(Cocktail@example.com)，因为当前不支持密码设置功能，所以创建 ID 后，必须进行密码初始化修改使用。 (初始化后提供的初始密码为‘Pass0000’)   a) 点击环境设置→用户→右上角的用户创建。    b) 选择用户 ID、名称、权限后，点击‘创建’按钮。                    权限       仪表盘       服务       目录       集群       环境设置                       ADMIN       ⃝       ⃝       ⃝       ⃝       ⃝                 DEVOPS       X       △       ⃝       X       X           - ADMIN : 抄录服务管理。可使用仪表盘、服务、目录、集群、环境设置菜单   - DEVOPS : 管理被分配到会员的服务。可使用服务和目录，可查询集群  ","categories": [],
         "tags": [],
         "url": "http://localhost:4000/docs/zh/2.1.1/",
         "teaser":null},{

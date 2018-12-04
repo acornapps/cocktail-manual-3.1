@@ -13,4 +13,4 @@ sidebar:
 
 ---
 
-The following section provides a list of common Kubernetes and Cengjiyun terminologies and explanations.
+The following section provides a list of common Kubernetes and Cocktail terminologies and explanations.

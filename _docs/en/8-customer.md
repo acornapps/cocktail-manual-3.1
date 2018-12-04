@@ -13,7 +13,7 @@ sidebar:
 
 ---
 
-Thank you for using Cengjiyun.
+Thank you for using Cocktail.
 
 Contact us for technical support and product purchase consultations.
 We provide the following services:
