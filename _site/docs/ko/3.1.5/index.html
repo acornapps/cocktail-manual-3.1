@@ -1,0 +1,666 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>3.1.5 파이프라인 - Cengjiyun Menual 3.0.0</title>
+<meta name="description" content="An amazing website.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Cengjiyun Menual 3.0.0">
+<meta property="og:title" content="3.1.5 파이프라인">
+<meta property="og:url" content="http://localhost:4000/docs/ko/3.1.5/">
+
+
+  <meta property="og:description" content="An amazing website.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-10-24T18:18:27+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/docs/ko/3.1.5/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Your Name",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cengjiyun Menual 3.0.0 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Cengjiyun Menual 3.0.0</a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/0.0/"><span class="nav__sub-title">청지원 이해</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.1/" class="">청지원 구성 개요</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.2/" class="">클러스터 관리 레이어</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.3/" class="">서비스 관리 레이어</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.4/" class="">파이프라인 레이어</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.5/" class="">카탈로그 레이어</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.6/" class="">대시보드 레이어</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/1/"><span class="nav__sub-title">로그인</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/2/"><span class="nav__sub-title">환경설정</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/2.1/" class="">사용자</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/2.2/" class="">계정</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/2.3/" class="">서비스</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/3/"><span class="nav__sub-title">서비스</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/3.1/" class="">어플리케이션 관리</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/3.2/" class="">빌드 관리</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/4/"><span class="nav__sub-title">카탈로그</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/4.1/" class="">카탈로그 저장</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/4.2/" class="">카탈로그 배포</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/4.3/" class="">카탈로그 편집</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/4.4/" class="">카탈로그 삭제</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/5/"><span class="nav__sub-title">클러스터</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.1/" class="">클러스터 관리</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.2/" class="">노드</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.3/" class="">어플리케이션</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.4/" class="">볼륨</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.5/" class="">알람</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.6/" class="">미터링</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/6/"><span class="nav__sub-title">대시보드</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/6.1/" class="">사용자 관리</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/7/"><span class="nav__sub-title">용어 설명</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/7.1/" class="">Kubernetes</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/7.2/" class="">청지윈</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/7.3/" class="">청지윈 System Error Code</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/8/"><span class="nav__sub-title">고객지원서비스</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="3.1.5 파이프라인">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">3.1.5 파이프라인
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <hr />
+<p>파이프라인 기능을 통해 이미지 빌드 작업부터 워크로드 배포작업까지 한 번에 진행 할 수 있다.<br />
+또한 배포 중인 워크로드의 이미지 버전을 변경하여 재배포 할 수 있다.</p>
+
+<h3 id="a-서비스--어플리케이션-맵-선택--파이프라인을-클릭한다">a) 서비스 → 어플리케이션 맵 선택 → 파이프라인을 클릭한다.</h3>
+<p><img src="/assets/KR/3.0.0/3.1.5_1.png" alt="" /><img src="/assets/KR/3.0.0/3.1.5_2.png" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><strong>파이프라인 메뉴</strong></th>
+      <th style="text-align: left"><strong>설명</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">일괄 실행</td>
+      <td style="text-align: left">파이프라인 작업들을 일괄적으로 실행</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">실행</td>
+      <td style="text-align: left">해당 파이프라인 작업을 실행</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><strong>이미지 메뉴</strong></th>
+      <th style="text-align: left"><strong>빌드</strong></th>
+      <th style="text-align: left"><strong>설명</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">이미지 태그</td>
+      <td style="text-align: left">X</td>
+      <td style="text-align: left">레지스트리에 있는 태그 입력시 해당 버전으로 워크로드를 배포</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">지정</td>
+      <td style="text-align: left">⃝</td>
+      <td style="text-align: left">이미지 버전 중 지정된 버전으로 워크로드를 배포</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">최신</td>
+      <td style="text-align: left">⃝</td>
+      <td style="text-align: left">이미지 버전 중 최신 버전으로 워크로드를 배포</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">빌드 &amp; 배포</td>
+      <td style="text-align: left">⃝</td>
+      <td style="text-align: left">새롭게 빌드 작업 후 해당 이미지 버전으로 워크로드를 배포</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="b-파이프라인-실행">b) 파이프라인 실행</h3>
+
+<h4 id="1-공용-이미지로-워크로드를-생성-했을-경우">1. 공용 이미지로 워크로드를 생성 했을 경우</h4>
+
+<p>이미지 태그 입력 후 ‘실행’ 혹은 ‘일괄실행’ 클릭(deploy된 버전과 입력한 버전이 다를 경우에만 실행가능. 단, latest 제외)
+<img src="/assets/KR/3.0.0/3.1.5_3.png" alt="" /></p>
+
+<h4 id="2-빌드한-이미지로-워크로드를-생성-했을-경우">2. 빌드한 이미지로 워크로드를 생성 했을 경우</h4>
+
+<ul>
+  <li><strong>지정한 이미지로 배포하기</strong></li>
+</ul>
+
+<p>파이프라인 작업 목록 우측에서 ‘지정’ 및 이미지 선택 후 ‘실행’ 혹은 ‘일괄실행’ 클릭(deploy된 버전과 입력한 버전이 다를 경우에만 실행가능)
+<img src="/assets/KR/3.0.0/3.1.5_4.png" alt="" /></p>
+
+<ul>
+  <li><strong>새롭게 빌드 작 후 해당 이미지로 배포하기</strong></li>
+</ul>
+
+<p>파이프라인 작업 목록 우측에서 ‘빌드&amp;배포’ 선택 후 ‘실행여부’ 체크. 이후 ‘실행’ 혹은 ‘일괄실행’ 클릭(실행 여부가 체크되어 있는 경우에만 실행가능)
+<img src="/assets/KR/3.0.0/3.1.5_5.png" alt="" /></p>
+
+<ul>
+  <li><strong>최신 이미지로 배포하기</strong></li>
+</ul>
+
+<p>파이프라인 작업 목록 우측에서 ‘최신’ 선택 후 ‘실행’ 혹은 ‘일괄실행’ 클릭(deploy된 버전과 입력한 버전이 다를 경우에만 실행가능)
+<img src="/assets/KR/3.0.0/3.1.5_6.png" alt="" /></p>
+
+<ul>
+  <li><strong>빌드 편집 화면 이동 및 로그보기</strong></li>
+</ul>
+
+<p>빌드 이미지명을 클릭 할 경우 빌드 편집화면으로 이동한다.
+<img src="/assets/KR/3.0.0/3.1.5_7.png" alt="" /></p>
+
+<p>빌드 태그명을 클릭 할 경우 로그를 볼 수 있다.
+<img src="/assets/KR/3.0.0/3.1.5_8.png" alt="" /><img src="/assets/2.5.0 파이프라인 로그1.png" alt="" /></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination /docs/ko/3.1.6/">
+    
+      <a href="/docs/ko/3.1.4/" class="pagination--pager" title="3.1.4 모니터링
+">Previous</a>
+    
+    
+      <a href="/docs/ko/3.1.6/" class="pagination--pager" title="3.1.6 퍼시스턴트 볼륨
+">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div style="text-align: center;">Copyright (c) 2016-2018, Acornsoft all rights reserved.</div>
+<!-- end custom footer snippets -->
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

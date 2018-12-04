@@ -1,0 +1,590 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Pipeline Layer - Cengjiyun Menual 3.0.0</title>
+<meta name="description" content="An amazing website.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Cengjiyun Menual 3.0.0">
+<meta property="og:title" content="Pipeline Layer">
+<meta property="og:url" content="http://localhost:4000/docs/en/0.4/">
+
+
+  <meta property="og:description" content="An amazing website.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-10-24T18:18:27+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/docs/en/0.4/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Your Name",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cengjiyun Menual 3.0.0 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Cengjiyun Menual 3.0.0</a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/readme_0/"><span class="nav__sub-title">What is Cengjiyun?</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.0/" class="">Cengjiyun Structure Overview</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.1/" class="">Cluster Management Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.2/" class="">Service Management Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.3/" class="">Pipeline Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.4/" class="active">Catalog Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.5/" class="">Dashboard Layer</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/1/"><span class="nav__sub-title">Login</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/2/"><span class="nav__sub-title">Environment Settings</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.1/" class="">Users</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.2/" class="">Account</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.3/" class="">Service</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/3/"><span class="nav__sub-title">Service</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/3.1/" class="">Application Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/3.2/" class="">Build Management</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/4/"><span class="nav__sub-title">Catalog</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.1/" class="">Save Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.2/" class="">Deploy Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.3/" class="">Edit Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.4/" class="">Delete Catalog</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/5/"><span class="nav__sub-title">Cluster</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.1/" class="">Cluster Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.2/" class="">Node</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.3/" class="">Application</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.4/" class="">Volume</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.5/" class="">Alerts</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.6/" class="">Metering</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/6/"><span class="nav__sub-title">Dashboard</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/6.1/" class="">User Management</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/7/"><span class="nav__sub-title">Glossary</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.1/" class="">Kubernetes</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.2/" class="">Cengjiyun</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.3/" class="">Cengjiyun System Error Code</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/8/"><span class="nav__sub-title">Customer Support</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Pipeline Layer">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Pipeline Layer
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <hr />
+
+<p>The pipeline layer automates container building and deployment from code.</p>
+
+<p>The build step performed tasks (code download, build/test) and container image building sequentially based on user settings. Tasks use containers that perform tasks internally and can be scaled using public or user-created containers in addition to the default containers.</p>
+
+<p>Built images are updated (rolling) to containers on a Cengjiyun server. Images created in the build step are assigned an automatic build number, which is used for version updates or rollbacks.</p>
+
+<p>All work processes from build to deployment are automated via the pipeline. Thus, developers can focus on writing and modifying code once a pipeline is configured.</p>
+
+<p>The following diagram shows how the pipeline layer is structured:</p>
+
+<p><img src="/assets/cocktailcloud-architecture-5.png" alt="" /></p>
+
+<p>The pipeline layer provides a foundation for DevOps through continuous integration and deployment (CI/CD), and DevOps emphasizes continuity and organic cooperation between development and operations. As one of the components required for DevOps, CI/CD is equally important in container-based development and operations.</p>
+
+<hr />
+
+<p>Previous Topic : <a href="/dosc/en/0.3/">Service Management Layer</a></p>
+
+<p>Next Topic : <a href="/dosc/en/0.5/">Catalog Layer</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination /docs/en/0.5/">
+    
+      <a href="/docs/en/0.3/" class="pagination--pager" title="Service Management Layer
+">Previous</a>
+    
+    
+      <a href="/docs/en/0.5/" class="pagination--pager" title="Catalog Layer
+">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div style="text-align: center;">Copyright (c) 2016-2018, Acornsoft all rights reserved.</div>
+<!-- end custom footer snippets -->
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

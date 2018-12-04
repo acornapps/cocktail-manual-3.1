@@ -1,0 +1,785 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>5.1.1 Add Cluster - Cengjiyun Menual 3.0.0</title>
+<meta name="description" content="An amazing website.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Cengjiyun Menual 3.0.0">
+<meta property="og:title" content="5.1.1 Add Cluster">
+<meta property="og:url" content="http://localhost:4000/docs/en/5.1.1/">
+
+
+  <meta property="og:description" content="An amazing website.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-10-24T18:18:27+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/docs/en/5.1.1/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Your Name",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cengjiyun Menual 3.0.0 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Cengjiyun Menual 3.0.0</a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/readme_0/"><span class="nav__sub-title">What is Cengjiyun?</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.0/" class="">Cengjiyun Structure Overview</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.1/" class="">Cluster Management Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.2/" class="">Service Management Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.3/" class="">Pipeline Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.4/" class="">Catalog Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.5/" class="">Dashboard Layer</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/1/"><span class="nav__sub-title">Login</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/2/"><span class="nav__sub-title">Environment Settings</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.1/" class="">Users</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.2/" class="">Account</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.3/" class="">Service</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/3/"><span class="nav__sub-title">Service</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/3.1/" class="">Application Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/3.2/" class="">Build Management</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/4/"><span class="nav__sub-title">Catalog</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.1/" class="">Save Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.2/" class="">Deploy Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.3/" class="">Edit Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.4/" class="">Delete Catalog</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/5/"><span class="nav__sub-title">Cluster</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.1/" class="">Cluster Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.2/" class="">Node</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.3/" class="">Application</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.4/" class="">Volume</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.5/" class="">Alerts</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.6/" class="">Metering</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/6/"><span class="nav__sub-title">Dashboard</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/6.1/" class="">User Management</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/7/"><span class="nav__sub-title">Glossary</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.1/" class="">Kubernetes</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.2/" class="">Cengjiyun</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.3/" class="">Cengjiyun System Error Code</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/8/"><span class="nav__sub-title">Customer Support</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="5.1.1 Add Cluster">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">5.1.1 Add Cluster
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <hr />
+
+<p>This feature allows you to add clusters.</p>
+
+<h3 id="a-cluster--click-the--button-in-the-top-right-corner">a) Cluster → Click the [+] button in the top-right corner.</h3>
+<p><img src="/assets/EN/3.0.0/5.1.1_1.png" alt="" /></p>
+
+<h3 id="b-enter-basic-information-name-k8s-version-and-description">b) Enter basic information (name, k8s version, and description).</h3>
+<p><img src="/assets/EN/3.0.0/5.1.1_2.png" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Basic Information</strong></th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Name</td>
+      <td style="text-align: left">Name of cluster to be added</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">k8s version</td>
+      <td style="text-align: left">Kubernetes version installed on cluster (e.g., 1.8.13)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">ID</td>
+      <td style="text-align: left">Cluster unique ID (user defined), required for alarm message redirect</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Description</td>
+      <td style="text-align: left">User-defined cluster description</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="c-enter-provider-information-account-type-and-region">c) Enter provider information (account, type, and region).</h3>
+
+<p>The input fields vary depending on the provider and account type. For bare-metal, a default value is assigned for the region and may be changed as necessary.
+<img src="/assets/EN/3.0.0/5.1.1_3.png" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Provider</strong></th>
+      <th style="text-align: left"><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Account</td>
+      <td style="text-align: left">Registered account</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Type</td>
+      <td style="text-align: left">Kubernetes usage type; Select MANAGED, PROVIDER, or GKE</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Region</td>
+      <td style="text-align: left">Region where the Kubernetes server is installed</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Type</strong></th>
+      <th style="text-align: left"><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">MANAGED</td>
+      <td style="text-align: left">Cluster where Kubernetes is configured via CUBE Installer</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">PROVIDER</td>
+      <td style="text-align: left">Select if using a public cloud and Kubernetes via a VM (If using other services such as load balancers and storage)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">GKE</td>
+      <td style="text-align: left">Cluster configured with Google Kubernetes Engine on Google Cloud Platform</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>Provider Type - MANAGED</strong><img src="/assets/EN/3.0.0/5.1.1_4.png" alt="" /></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Add’l Input</strong></th>
+      <th style="text-align: left"><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Node Port URL</td>
+      <td style="text-align: left">IP to be used with a port in a method where service access is exposed by attaching a port to a node (Master or load balancer IP)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Node Port Range</td>
+      <td style="text-align: left">Range of ports to be used with an IP in a method where service access is exposed by attaching a port to a node. (30000 - 32767 recommended)</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+    <p><strong>Provider Type - PROVIDER</strong><img src="/assets/EN/3.0.0/5.1.1_5.png" alt="" /></p>
+  </li>
+  <li>
+    <p><strong>Provider Type - GKE</strong><img src="/assets/EN/3.0.0/5.1.1_6.png" alt="" /></p>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Add’l Input</strong></th>
+      <th style="text-align: left"><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Project ID</td>
+      <td style="text-align: left">ID of a project using a Google Cloud Platform account (Project using GKE)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="d-enter-the-monitoring-information-master-url-ingress-host-monitoring-host-and-monitoring-port">d) Enter the monitoring information (Master URL, Ingress Host, Monitoring Host and Monitoring Port).</h3>
+<p><img src="/assets/EN/3.0.0/5.1.1_7.png" alt="" /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">**Monitoring Info **</th>
+      <th style="text-align: left"><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Master URL</td>
+      <td style="text-align: left">Kubernetes API address (Format: “<a href="https://host:port">https://host:port</a>” )</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Ingress Host</td>
+      <td style="text-align: left">Host IP address for Ingress method (Master or load balancer IP)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Monitoring Host</td>
+      <td style="text-align: left">Monitoring Host IP address of the server where the monitoring API is installed. (“<a href="http://host">http://host</a>”) Monitoring Port</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Monitoring Port</td>
+      <td style="text-align: left">Port for monitoring API</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="e-enter-the-cluster-type">e) Enter the cluster type.<img src="/assets/EN/3.0.0/5.1.1_8.png" alt="" /></h5>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Cluster Type Info</strong></th>
+      <th style="text-align: left"><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Certification Type</td>
+      <td style="text-align: left">Certification method for k8s clusters</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>Certification Type</strong><img src="/assets/EN/3.0.0/5.1.1_9.png" alt="" /></li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Certification Info</th>
+      <th style="text-align: left"><strong>Description</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">User ID</td>
+      <td style="text-align: left">k8s user ID</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Password</td>
+      <td style="text-align: left">k8s user password</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Cluster CA Certification</td>
+      <td style="text-align: left">Connect to master server, go to /etc/kubernetes/pki/, and enter the ca.crt file value</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Client Certificate Data</td>
+      <td style="text-align: left">Connect to master server, go to /etc/kubernetes/pki/, and enter the admin.crt file value</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Client Key Data</td>
+      <td style="text-align: left">Connect to master server, go to /etc/kubernetes/pki/, and enter the admin.key file value</td>
+    </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination /docs/en/5.1.2/">
+    
+      <a href="/docs/en/5.1/" class="pagination--pager" title="5.1 Cluster Management
+">Previous</a>
+    
+    
+      <a href="/docs/en/5.1.2/" class="pagination--pager" title="5.1.2 Edit Cluster
+">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div style="text-align: center;">Copyright (c) 2016-2018, Acornsoft all rights reserved.</div>
+<!-- end custom footer snippets -->
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

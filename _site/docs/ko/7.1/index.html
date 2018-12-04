@@ -1,0 +1,716 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>7.1 Kubernetes(k8s) - Cengjiyun Menual 3.0.0</title>
+<meta name="description" content="An amazing website.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Cengjiyun Menual 3.0.0">
+<meta property="og:title" content="7.1 Kubernetes(k8s)">
+<meta property="og:url" content="http://localhost:4000/docs/ko/7.1/">
+
+
+  <meta property="og:description" content="An amazing website.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-10-24T18:18:27+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/docs/ko/7.1/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Your Name",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cengjiyun Menual 3.0.0 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Cengjiyun Menual 3.0.0</a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/0.0/"><span class="nav__sub-title">청지원 이해</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.1/" class="">청지원 구성 개요</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.2/" class="">클러스터 관리 레이어</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.3/" class="">서비스 관리 레이어</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.4/" class="">파이프라인 레이어</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.5/" class="">카탈로그 레이어</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/0.6/" class="">대시보드 레이어</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/1/"><span class="nav__sub-title">로그인</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/2/"><span class="nav__sub-title">환경설정</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/2.1/" class="">사용자</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/2.2/" class="">계정</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/2.3/" class="">서비스</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/3/"><span class="nav__sub-title">서비스</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/3.1/" class="">어플리케이션 관리</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/3.2/" class="">빌드 관리</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/4/"><span class="nav__sub-title">카탈로그</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/4.1/" class="">카탈로그 저장</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/4.2/" class="">카탈로그 배포</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/4.3/" class="">카탈로그 편집</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/4.4/" class="">카탈로그 삭제</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/5/"><span class="nav__sub-title">클러스터</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.1/" class="">클러스터 관리</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.2/" class="">노드</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.3/" class="">어플리케이션</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.4/" class="">볼륨</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.5/" class="">알람</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/5.6/" class="">미터링</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/6/"><span class="nav__sub-title">대시보드</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/6.1/" class="">사용자 관리</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/7/"><span class="nav__sub-title">용어 설명</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/7.1/" class="active">Kubernetes</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/7.2/" class="">청지윈</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/ko/7.3/" class="">청지윈 System Error Code</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/ko/8/"><span class="nav__sub-title">고객지원서비스</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="7.1 Kubernetes(k8s)">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">7.1 Kubernetes(k8s)
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <hr />
+<h3 id="1cluster">1.Cluster</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">용어</th>
+      <th style="text-align: left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Namespace</td>
+      <td style="text-align: left">k8s의 가상 클러스터로 사용자들이 여러팀 또는 프로젝트로 분산되어 작업 할 수 있는 별도의 환경</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Nodes</td>
+      <td style="text-align: left">k8s의 클러스터링되어 있는 어플리케이션을 구동하는 물리서버 또는 VM</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Persistent Volumes(PV)</td>
+      <td style="text-align: left">외부 저장소. NFS, iSCSI, 클라우드에서 제공하는 스토리지 시스템을 지원</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Roles</td>
+      <td style="text-align: left">사용의 따라 권한을 부여.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Storage Classes</td>
+      <td style="text-align: left">PV를 동적으로 Provisioning 할 경우, NFS 서버를 식별하기 위한 식별자</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="2workloads">2.Workloads</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">용어</th>
+      <th style="text-align: left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Cron Jobs</td>
+      <td style="text-align: left">‘특정 시점에서 한 번’ 또는 ‘특정 시점에서 반복’과 같이 시간 기반의 관리 작업</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Deployments</td>
+      <td style="text-align: left">Pod 생성을 위한 설정값의 등록 정보</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Jobs</td>
+      <td style="text-align: left">Job은 일괄처리를 수행하는 Pod의 Supervisor. 즉, 특정한 계산 또는 백업과 같이 특정 시간 동안만 실행되는 프로세스.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Pods</td>
+      <td style="text-align: left">1개 이상의 컨테이너로 구성되는 k8s에서 deploy를 위한 최소단위. Pod는 어플리케이션 스택에서 서로 다른 Docker image를 혼합하여 구성</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Replica Sets</td>
+      <td style="text-align: left">지정된 Pod 복제본이 항상 실행(유지)되도록 한다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Replication Controllers</td>
+      <td style="text-align: left">지정된 수의 Pod 복제본이 실행되고 있는지 체크</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Stateful Sets</td>
+      <td style="text-align: left">Pod의 배포 및 확장을 관리하고, Pod의 순서와 특성에 대한 설정을 제공</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="3discovery-and-load-balancing">3.Discovery and load balancing</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">용어</th>
+      <th style="text-align: left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Ingresses</td>
+      <td style="text-align: left">외부접근에 대한 요청을 name-based로 가상 Hosting을 제공</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Services</td>
+      <td style="text-align: left">여러 컨테이너를 하나의 논리적인 단위로 그룹화하여, 외부에서 접속할 수 있는 단일 EndPoint를 제공</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="4config-and-storage">4.config and storage</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">용어</th>
+      <th style="text-align: left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Config Maps</td>
+      <td style="text-align: left">데이터를 저장하여 사용할 수 있게 지원</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Persistent Volume Claime(PVC)</td>
+      <td style="text-align: left">사용자가 PV에 대한 요청. Pod는 PVC를 통하여 리소스(CPU 및 메모리)를 요청할 수 있고, 저장공간의 사이즈 및 접근 권한(rw, readOnly …)을 요청할 수 있다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Secrets</td>
+      <td style="text-align: left">Password 또는 OAuth 토큰 및 ssh key 등의 저장소.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="5settings">5.settings</h3>
+
+<p>K8s의Global Settings값을 조정 할 수 있습니다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">옵션</th>
+      <th style="text-align: left">설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Cluster name</td>
+      <td style="text-align: left">Kubernetes Cluster의 이름값을 조정할 수 있다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Items per page</td>
+      <td style="text-align: left">1페이지에 나타낼 수 있는 Items의 값을 조정할 수 있다.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Auto-refresh time interval</td>
+      <td style="text-align: left">Log를 자동으로 새로고침하는 시간을 조정할 수 있다.</td>
+    </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination /docs/ko/7.2/">
+    
+      <a href="/docs/ko/7/" class="pagination--pager" title="7.용어 설명
+">Previous</a>
+    
+    
+      <a href="/docs/ko/7.2/" class="pagination--pager" title="7.2 청지윈
+">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div style="text-align: center;">Copyright (c) 2016-2018, Acornsoft all rights reserved.</div>
+<!-- end custom footer snippets -->
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,716 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>7.1 Kubernetes(k8s) - Cengjiyun Menual 3.0.0</title>
+<meta name="description" content="An amazing website.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Cengjiyun Menual 3.0.0">
+<meta property="og:title" content="7.1 Kubernetes(k8s)">
+<meta property="og:url" content="http://localhost:4000/docs/en/7.1/">
+
+
+  <meta property="og:description" content="An amazing website.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-10-24T18:18:27+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/docs/en/7.1/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Your Name",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cengjiyun Menual 3.0.0 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Cengjiyun Menual 3.0.0</a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/readme_0/"><span class="nav__sub-title">What is Cengjiyun?</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.0/" class="">Cengjiyun Structure Overview</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.1/" class="">Cluster Management Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.2/" class="">Service Management Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.3/" class="">Pipeline Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.4/" class="">Catalog Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.5/" class="">Dashboard Layer</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/1/"><span class="nav__sub-title">Login</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/2/"><span class="nav__sub-title">Environment Settings</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.1/" class="">Users</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.2/" class="">Account</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.3/" class="">Service</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/3/"><span class="nav__sub-title">Service</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/3.1/" class="">Application Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/3.2/" class="">Build Management</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/4/"><span class="nav__sub-title">Catalog</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.1/" class="">Save Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.2/" class="">Deploy Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.3/" class="">Edit Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.4/" class="">Delete Catalog</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/5/"><span class="nav__sub-title">Cluster</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.1/" class="">Cluster Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.2/" class="">Node</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.3/" class="">Application</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.4/" class="">Volume</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.5/" class="">Alerts</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.6/" class="">Metering</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/6/"><span class="nav__sub-title">Dashboard</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/6.1/" class="">User Management</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/7/"><span class="nav__sub-title">Glossary</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.1/" class="active">Kubernetes</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.2/" class="">Cengjiyun</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.3/" class="">Cengjiyun System Error Code</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/8/"><span class="nav__sub-title">Customer Support</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="7.1 Kubernetes(k8s)">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">7.1 Kubernetes(k8s)
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <hr />
+<h3 id="1cluster">1.Cluster</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Term</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Namespace</td>
+      <td style="text-align: left">A separate environment in which users across multiple teams or projects can work in virtual k8s clusters</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Nodes</td>
+      <td style="text-align: left">A physical server or VM running clustered k8s applications</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Persistent Volumes(PV)</td>
+      <td style="text-align: left">External storage; Supports NFS, iSCSI, and cloud storage systems</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Roles</td>
+      <td style="text-align: left">Grants permissions according to usage case.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Storage Classes</td>
+      <td style="text-align: left">Identifier for identifying NFS servers when dynamically provisioning a PV</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="2workloads">2.Workloads</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Term</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Cron Jobs</td>
+      <td style="text-align: left">Time-based administration tasks such as ‘Once at a certain time’ or ‘Repeat at a certain time</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Deployments</td>
+      <td style="text-align: left">Settings values for pod generation</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Jobs</td>
+      <td style="text-align: left">A job is a pod’s supervisor that performs batch processing. In other words, it’s a process that runs only for a specific period as with certain calculations or backups</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Pods</td>
+      <td style="text-align: left">A minimum unit consisting of one or more containers for deployment in k8s. A pod is a mix of different Docker images in an application stack</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Replica Sets</td>
+      <td style="text-align: left">Ensures that a specified pod copy is always running.</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Replication Controllers</td>
+      <td style="text-align: left">Checks whether a specified number of pod copies are running</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Stateful Sets</td>
+      <td style="text-align: left">Manages pod deployment and scaling and provides settings for the order and characteristics of pods</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="3discovery-and-load-balancing">3.Discovery and load balancing</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Term</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Ingresses</td>
+      <td style="text-align: left">Provides name-based virtual hosting for external access requests</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Services</td>
+      <td style="text-align: left">Provides a single endpoint that can be accessed externally by grouping multiple containers into a single logical unit</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="4config-and-storage">4.config and storage</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Term</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Config Maps</td>
+      <td style="text-align: left">Stores data for use</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Persistent Volume Claime(PVC)</td>
+      <td style="text-align: left">User request for a PV. A pod can request resources (CPU and memory) as well as the size of and access privileges (RW, RO, etc.) to a storage space</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Secrets</td>
+      <td style="text-align: left">Repository for password, OAuth tokens, and SSH keys</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="5settings">5.settings</h3>
+
+<p>K8s의Global Settings값을 조정 할 수 있습니다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Option</th>
+      <th style="text-align: left">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Cluster name</td>
+      <td style="text-align: left">Adjusts the name value of a Kubernetes cluster</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Items per page</td>
+      <td style="text-align: left">Adjusts the number of items that are displayed on a page</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Auto-refresh time interval</td>
+      <td style="text-align: left">Adjusts the time interval for automatically refreshing logs</td>
+    </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination /docs/en/7.2/">
+    
+      <a href="/docs/en/7/" class="pagination--pager" title="7.Glossary
+">Previous</a>
+    
+    
+      <a href="/docs/en/7.2/" class="pagination--pager" title="7.2 Cengjiyun
+">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div style="text-align: center;">Copyright (c) 2016-2018, Acornsoft all rights reserved.</div>
+<!-- end custom footer snippets -->
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>

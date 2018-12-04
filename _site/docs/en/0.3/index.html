@@ -1,0 +1,629 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.13.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Service Management Layer - Cengjiyun Menual 3.0.0</title>
+<meta name="description" content="An amazing website.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Cengjiyun Menual 3.0.0">
+<meta property="og:title" content="Service Management Layer">
+<meta property="og:url" content="http://localhost:4000/docs/en/0.3/">
+
+
+  <meta property="og:description" content="An amazing website.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-10-24T18:18:27+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/docs/en/0.3/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Your Name",
+      "url": "http://localhost:4000",
+      "sameAs": null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cengjiyun Menual 3.0.0 Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="/">Cengjiyun Menual 3.0.0</a>
+        <ul class="visible-links"></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items">
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/readme_0/"><span class="nav__sub-title">What is Cengjiyun?</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.0/" class="">Cengjiyun Structure Overview</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.1/" class="">Cluster Management Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.2/" class="">Service Management Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.3/" class="active">Pipeline Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.4/" class="">Catalog Layer</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/0.5/" class="">Dashboard Layer</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/1/"><span class="nav__sub-title">Login</span></a>
+        
+
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/2/"><span class="nav__sub-title">Environment Settings</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.1/" class="">Users</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.2/" class="">Account</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/2.3/" class="">Service</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/3/"><span class="nav__sub-title">Service</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/3.1/" class="">Application Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/3.2/" class="">Build Management</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/4/"><span class="nav__sub-title">Catalog</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.1/" class="">Save Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.2/" class="">Deploy Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.3/" class="">Edit Catalog</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/4.4/" class="">Delete Catalog</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/5/"><span class="nav__sub-title">Cluster</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.1/" class="">Cluster Management</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.2/" class="">Node</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.3/" class="">Application</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.4/" class="">Volume</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.5/" class="">Alerts</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/5.6/" class="">Metering</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/6/"><span class="nav__sub-title">Dashboard</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/6.1/" class="">User Management</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/7/"><span class="nav__sub-title">Glossary</span></a>
+        
+
+        
+        <ul>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.1/" class="">Kubernetes</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.2/" class="">Cengjiyun</a></li>
+          
+            
+            
+
+            
+            
+
+            <li><a href="/docs/en/7.3/" class="">Cengjiyun System Error Code</a></li>
+          
+        </ul>
+        
+      </li>
+    
+      <li>
+        
+          
+          
+
+          <a href="/docs/en/8/"><span class="nav__sub-title">Customer Support</span></a>
+        
+
+        
+      </li>
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Service Management Layer">
+    <meta itemprop="description" content="">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Service Management Layer
+</h1>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <hr />
+<p>In general, a single application or service consists of multiple containers. In particular, an orchestration engine such as Kubernetes requires additional objects such as a service port, controller, and storage volume in addition to the container. Therefore, to manage container-based applications and services, an abstraction unit is required to package and manage containers and associated objects. The service management layer fulfills this role.</p>
+
+<p>Cengjiyun service management layer has the following hierarchical structure:</p>
+
+<ul>
+  <li>
+    <p>Service : Being the highest level, this group allocates and manages cluster resources, image registries, and image builds required for a service. Independent management is possible through the granting of usage privileges according to developer and administrator roles. In Cengjiyun, multiple services can be created as needed and assigned/managed by a team or service.</p>
+  </li>
+  <li>
+    <p>Application Map : This unit configures/manages applications and corresponds to one workload. For example, a service can be configured via an application map that corresponds to development, validation, and operating systems, and the application map can be configured based on roles, such as data management and analysis systems. Logically, an application map can be considered a unit that manages multiple container configurations for workloads. The previously-described service consists of one or more application maps.</p>
+  </li>
+  <li>
+    <p>Cengjiyun Server : This unit packages containers and associated orchestration objects. An application map consists of one or more Cengjiyun servers. For example, a server can be configured based on components such as web and DB servers, and small-scale microservices can also be configured via a Cengjiyun server. Cengjiyun servers are described in detail in the following section.</p>
+  </li>
+</ul>
+
+<p>The following diagram shows how the service management layer is structured:</p>
+
+<p><img src="/assets/cocktailcloud-architecture-3.png" alt="" /></p>
+
+<p><strong>Cengjiyun Server</strong></p>
+
+<p>A Cengjiyun server has the most important role in the service management layer. As previously described, a Cengjiyun server is a unit for packaging containers and associated orchestration objects. A Cengjiyun server manages the lifecycle (creation, update, etc.) of a packaged object and monitors and manages the status and resources in package units.</p>
+
+<p>The following diagram describes this relationship:</p>
+
+<p><img src="/assets/cocktailcloud-architecture-4.png" alt="" /></p>
+
+<p>The management features provided via a Cengjiyun server are as follows:</p>
+
+<ul>
+  <li>
+    <p>Server creation, modification (update), termination, restart, deletion, auto-scaling</p>
+  </li>
+  <li>
+    <p>Rolling update</p>
+  </li>
+  <li>
+    <p>Service port management</p>
+  </li>
+  <li>
+    <p>Volume management</p>
+  </li>
+  <li>
+    <p>Monitoring</p>
+  </li>
+  <li>
+    <p>Inspection : Orchestration object status and deployment info lookup</p>
+  </li>
+  <li>
+    <p>Web terminal and log lookup : Container shell access; Container log lookup</p>
+  </li>
+</ul>
+
+<hr />
+
+<p>Previous Topic : <a href="/dosc/en/0.2/">Cluster Management Layer</a></p>
+
+<p>Next Topic : <a href="/dosc/en/0.4/">Pipeline Layer</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+      </footer>
+
+      
+
+      
+
+
+  <nav class="pagination /docs/en/0.4/">
+    
+      <a href="/docs/en/0.2/" class="pagination--pager" title="Cluster Management Layer
+">Previous</a>
+    
+    
+      <a href="/docs/en/0.4/" class="pagination--pager" title="Pipeline Layer
+">Next</a>
+    
+  </nav>
+
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<div style="text-align: center;">Copyright (c) 2016-2018, Acornsoft all rights reserved.</div>
+<!-- end custom footer snippets -->
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+
+
+
+
+
+
+
+  </body>
+</html>
