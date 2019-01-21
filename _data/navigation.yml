@@ -6,10 +6,10 @@
 
 # documentation links
 docs:
-  - title: "청지원 이해"
+  - title: "칵테일 클라우드 이해"
     url: /docs/ko/0.0/
     children:
-      - title: "청지원 구성 개요"
+      - title: "칵테일 클라우드 개요"
         url: /docs/ko/0.1/
       - title: "클러스터 관리 레이어"
         url: /docs/ko/0.2/
